@@ -45,6 +45,8 @@ a, a:hover{
 
 
 .list__block {
+	width: 80%;
+	padding: 20px;
 	text-align: center;
 	font-size: 14px;
 	position: absolute;
@@ -54,6 +56,9 @@ a, a:hover{
 	        transform: translateX(-50%);
 	z-index: 1;
 	opacity: 0;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	        border-radius: 5px;
 }
 
 .list__item:hover .list__image {
@@ -64,25 +69,32 @@ a, a:hover{
 
 .list__item:hover .list__block {
 	opacity: 1;
+	background: rgba(175,254,254,0.5);
 	-webkit-transition: all .2s ease-in-out;
 			transition: all .2s ease-in-out;
 }
 
+.list__image {
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	        border-radius: 5px;
+}
 .list__title {
 	font-family: 'Poiret one';
-	font-size: 20px;
+	font-size: 28px;
 	color: #1d7791;
 	font-weight: bold;
 }
 .list__description {
-	width: 200px;
-	margin-top: 10px;
+	margin-top: 20px;
 	text-align: left;
+	font-size: 16px;
+	line-height: 1.2;
 }
 
 .list__icon {
 	display: block;
-	font-size: 30px;
+	font-size: 46px;
 	margin-bottom: 25px;
 	color: #23807e;
 }
