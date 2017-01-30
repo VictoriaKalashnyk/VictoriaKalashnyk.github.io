@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Tajam</title>
+	<meta charset="utf-8">
+	<meta name="keywords" content="Creative Agency, Tajam, AMAZING TEAM,  Indonesia, Photoshop's version">
+	<meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, id amet maiores quam illo. At, architecto, inventore eveniet qui recusandae praesentium sequi laborum quos quis facere aliquam nulla dolor quo.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Victoria Kalashnyk">
+	<link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Playfair+Display:400,400i,700,700i,900,900i|Roboto:300,300i,400,400i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
+	
+		
+	<script src="js/jquery.1.7.1.min.js"></script>
+	<script src="js/bxslider/jquery.bxslider.min.js"></script>
+	
+	<script>
+		$(document).ready(function(){
+		
+			// Fixed header
+			$("#fixed-header").removeClass("default");
+			$(window).scroll(function(){
+				if ($(this).scrollTop() > 20) {
+					$("#fixed-header").addClass("default").fadeIn('fast');
+				} else {
+					$("#fixed-header").removeClass("default").fadeIn('fast');
+				};
+			});  
+			
+			// Initialization slider
+			$('.header .bxslider').bxSlider({
+				controls: false
+			}); 
+			$('.testimonials .bxslider').bxSlider({
+				nextText: '',
+				prevText: '',
+				startSlide: 2
+			}); 
+			
+		});  
+	</script>
+	
+</head>
+<body>
+	<div class="wrapper">
+	
+	<!-- Fixed header -->
+		<div id="fixed-header">
+			<div class="container">
+				<div class="navigation">
+				<img class="left" src="image/logo.png" alt="Logo" width="128" height="50">
+				<ul class="right">
+					<li><a href="#header">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#expertise">Expertise</a></li>
+					<li><a href="#team">Teams</a></li>
+					<li><a href="#works">Works</a></li>
+					<li><a href="#testimonials">People say</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+				</div>
+			</div>
+		</div>
+		
+	<!-- Header -->	
+		<div class="header" id="header">
+			<div class="container">
+				<div class="block">
+					<ul class="bxslider">
+						<li><h1>We Are Awesome Creative Agency</h1>
+							<div class="line"></div>
+							<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+						</li>
+						<li><h1>This is Photoshop's version</h1>
+							<div class="line"></div>
+							<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+						</li>
+						<li><h1>Proin gravida nibh vel velit</h1>
+							<div class="line"></div>
+							<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+						</li>
+						<li><h1>Duis sed odio sit amet nibh</h1>
+							<div class="line"></div>
+							<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+						</li>
+					</ul>	
+				</div>
+				<a class="btn" href="#">Learn more</a>
+			</div>
+		</div>
+		
+	<!-- Our history -->
+		<div class="about" id="about">
+			<div class="container">
+				<img src="image/big-logo.png" alt="Bid logo" width="235" height="229">
+				<div>
+					<h2 class="title">Our Story</h2>
+					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus</p>
+					<p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+					<a class="btn" href="#">Learn more</a>
+				</div>
+			</div>
+		</div>
+		
+	<!-- Video -->
+		<div class="video">
+			<div class="play">
+				<a href="#"><img src="image/play-icon.png" alt="Play" width="100" height="100"></a>
+				<p>Watch Our Story</p>
+			</div>
+		</div>
+		
+	<!-- Knowledge and experience -->
+		<div class="expertise" id="expertise">
+			<div class="container">
+				<h2 class="title">Expertise</h2>
+				<p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
+				<div class="line"></div>
+				<div class="column">
+					<span class="icons icon-one"></span>
+					<h3>WEB DESIGN & DEVELOPMENT</h3>
+					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+				</div>
+				<div class="column">
+					<span class="icons icon-two"></span>
+					<h3>BRANDING IDENTITY</h3>
+					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+				</div>
+				<div class="column">
+					<span class="icons icon-three"></span>
+					<h3>MOBILE APP</h3>
+					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+				</div>
+				<div class="column">
+					<span class="icons icon-four"></span>
+					<h3>SEARCH ENGINE OPTIMIZATION</h3>
+					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+				</div>
+				<div class="column">
+					<span class="icons icon-five"></span>
+					<h3>GAME DEVELOPMENT</h3>
+					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+				</div>
+				<div class="column">
+					<span class="icons icon-six"></span>
+					<h3>MADE WITH LOVE</h3>
+					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+				</div>
+			</div>
+		</div>
+		
+	<!-- Our team -->
+		<div class="team" id="team">
+			<div class="container">
+				<h2 class="title">MEET OUR AMAZING TEAM</h2>
+				<p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
+				<div class="line"></div>
+				<div>
+					<div class="person">
+						<img src="image/person-1.jpg" alt="Person" width="220" height="229">
+						<div>
+							<h3 class="rubric">Semf Ucuk</h3>
+							<p class="profession">Ceo & founder</p>
+						</div>
+					</div>
+					<div class="person">
+						<img src="image/person-2.jpg" alt="Person" width="220" height="229">
+						<div>
+							<h3 class="rubric">Dik Aladin</h3>
+							<p class="profession">Engineering</p>
+						</div>
+					</div>
+					<div class="person">
+						<img src="image/person-3.jpg" alt="Person" width="220" height="229">
+						<div>
+							<h3 class="rubric">Jeng Kol</h3>
+							<p class="profession">Designer</p>
+						</div>
+					</div>
+					<div class="person">
+						<img src="image/person-4.jpg" alt="Person" width="220" height="229">
+						<div>
+							<h3 class="rubric">Pet Romak</h3>
+							<p class="profession">Marketing</p>
+						</div>
+					</div>
+				</div>
+				<p>Become part of our dream team, let’s join us !</p>
+				<a class="btn" href="#">We are Hiring</a>
+			</div> 
+		</div>
+		
+	<!-- Our work -->
+		<div class="works" id="works">
+			<div class="container">
+				<span class="title">OUR Works</span>
+				<a class="projects" href="#">See All Project in dribbble</a>
+			</div>
+			<a href="#"><img src="image/projects-1.jpg" alt="projects"></a>
+			<a href="#"><img src="image/projects-2.jpg" alt="projects"></a>
+			<a href="#"><img src="image/projects-3.jpg" alt="projects"></a>
+			<a href="#"><img src="image/projects-4.jpg" alt="projects"></a>
+			<a href="#"><img src="image/projects-1.jpg" alt="projects"></a>
+			<a href="#"><img src="image/projects-2.jpg" alt="projects"></a>
+			<a href="#"><img src="image/projects-3.jpg" alt="projects"></a>
+			<a href="#"><img src="image/projects-4.jpg" alt="projects"></a>
+			<a href="#"><img src="image/projects-1.jpg" alt="projects"></a>
+			<a href="#"><img src="image/projects-2.jpg" alt="projects"></a>
+			<a href="#"><img src="image/projects-3.jpg" alt="projects"></a>
+			<a href="#"><img src="image/projects-4.jpg" alt="projects"></a>
+			<div class="container">
+				<a class="btn" href="#">Load more</a>
+			</div>
+		</div>
+		
+	<!-- Reviews -->
+		<div class="testimonials" id="testimonials">
+			<div class="container">
+				<span>“</span>
+				<ul class="bxslider">
+					<li>
+						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel 	  velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+						<h3 class="rubric">Jane Galadriel</h3>
+						<p class="profession">Ceo Tengkurep</p>
+					</li>
+					<li>
+						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel 	  velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+						<h3 class="rubric">Sergio Blazko</h3>
+						<p class="profession">Nice man</p>
+					</li>
+					<li>
+						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel 	  velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+						<h3 class="rubric">Vika Kalashnyk</h3>
+						<p class="profession">Good Girl</p>
+					</li>
+					<li>
+						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel 	  velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+						<h3 class="rubric">Archy Cat</h3>
+						<p class="profession">Favorite Animal</p>
+					</li>
+					<li>
+						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel 	  velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+						<h3 class="rubric">Olena Galadriel</h3>
+						<p class="profession">Ceo Tengkurep</p>
+					</li>
+				</ul>		
+			</div>
+		</div>
+		
+	<!-- Contacts -->
+		<div class="contact" id="contact">
+			<div class="container">
+				<form class="left" action="#" method="post">
+					<h2 class="title">Give us a good news</h2>
+					<input type="text" name="name" placeholder="Name"><br>
+					<input type="email" name="email" placeholder="Email"><br>
+					<input type="text" name="subject" placeholder="Subject"><br>
+					<textarea name="message" placeholder="Your Massage"></textarea><br>
+					<button class="btn" type="submit">Submit</button>
+				</form>
+				<div class="client right">
+					<h2 class="title">Our happy client</h2>
+					<ul>
+						<li><a href="http://www.zara.com" target="_blank"><img src="image/zara.png" alt="client" width="162" height="22"></a></li>
+						<li><a href="http://www.barneys.com" target="_blank"><img src="image/barney.png" alt="client" width="154" height="41"></a></li>
+						<li><a href="https://www.calvinklein.us" target="_blank"><img src="image/calvin-klein.png" alt="client" width="151" height="24"></a></li>
+						<li><a href="https://www.converse.com" target="_blank"><img src="image/converse.png" alt="client" width="113" height="69"></a></li>
+						<li><a href="http://global.levi.com" target="_blank"><img src="image/levis.png" alt="client" width="109" height="53"></a></li>
+						<li><a href="http://shop.mango.com" target="_blank"><img src="image/mango.png" alt="client" width="138" height="22"></a></li>
+						<li><a href="https://www.gucci.com" target="_blank"><img src="image/gucci.png" alt="client" width="140" height="21"></a></li>
+						<li><a href="https://www.nike.com" target="_blank"><img src="image/nike.png" alt="client" width="95" height="34"></a></li>
+						<li><a href="http://puma.com" target="_blank"><img src="image/puma.png" alt="client" width="114" height="56"></a></li>
+						<li><a href="http://www.billabong.com" target="_blank"><img src="image/billabong.png" alt="client" width="130" height="70"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+	<!-- Footer -->
+		<div class="footer"> 
+			<div class="container">
+				<div class="col one">
+					<img class="left" src="image/logo.png" alt="Logo" width="128" height="50">
+					<p>lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit</p>
+				</div>
+				<address class="col two">
+					<div class="rubric">Our Studio</div>
+					<img class="addr" src="image/big.png" alt="image"><p>Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat
+					11480 - Indonesia</p><br>
+					<img class="tel" src="image/phone.png" alt="image"><span>(+62) 21-2224 3333</span>
+				</address>
+				<div class="col three">
+					<h3>Stay in Touch</h3>
+					<input type="email" name="email" placeholder="Subscribe our newsletter">
+					<button type="submit"><img src="image/paper.png" alt="image"></button>
+					<ul>
+						<li><a href="https://vk.com" class="icon-fb" target="_blank">&nbsp;</a></li>
+						<li><a href="https://twitter.com" class="icon-tw" target="_blank">&nbsp;</a></li>
+						<li><a href="https://dribbble.com" class="icon-ball" target="_blank">&nbsp;</a></li>
+						<li><a href="https://www.instagram.com" class="icon-in" target="_blank">&nbsp;</a></li>
+						<li><a href="https://plus.google.com" class="icon-gl" target="_blank">&nbsp;</a></li>
+						<li><a href="https://www.youtube.com" class="icon-yt" target="_blank">&nbsp;</a></li>
+					</ul>
+				</div>
+				<ul class="list">
+					<li><a href="#">Help</a></li>
+					<li><a href="#">Terms & Condition</a></li>
+					<li><a href="#">Privacy</a></li>
+				</ul>
+				<p class="right">Copyright © 2015 - Tajem Creative</p>
+			</div>
+		</div>
+		
+	</div>
+	
+</body>
+</html>
