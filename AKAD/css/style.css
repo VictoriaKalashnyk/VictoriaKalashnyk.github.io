@@ -848,7 +848,7 @@ input[type="text"]:-ms-input-placeholder {
 	height: 20px;
 	background: #7beec7;
 	position: absolute;
-	top: 45px;
+	top: 35px;
 	z-index: -1;
 }
 
