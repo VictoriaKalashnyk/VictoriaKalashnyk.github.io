@@ -6,16 +6,45 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Victoria Kalashnyk">
 	<link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/ionicons.min.css">
 </head>
 <body>			
 
-	<h1>Практика верстки макетов</h1>
+	<h1 class="caption">Практика верстки макетов</h1>
 	
-	<ul>
-		<li><a href="https://victoriakalashnyk.github.io/GuriGuriNyoi/">Guri Guri Nyoi</a></li>
-		<li><a href="">Tajam</a></li>
-		<li><a href="https://victoriakalashnyk.github.io/AKAD/">Akad</a></li>
+	<ul class="list">
+		<li class="list__item">
+			<a class="list__link" href="https://victoriakalashnyk.github.io/Tajam/">
+				<img class="list__image" src="image/project-1.jpg" alt="project-1" width="230" height="300">
+				<div class="list__block">
+					<i class="ion-image list__icon"></i>
+					<span class="list__title">Tajam</span>
+					<p class="list__description">Первая верстка макета из PSD. Для адаптивности были использованы media-запросы.</p>
+				</div>
+			</a>
+		</li>
+		<li class="list__item">
+			<a class="list__link" href="https://victoriakalashnyk.github.io/AKAD/">
+				<img class="list__image" src="image/project-2.jpg" alt="project-2" width="230" height="300">
+				<div class="list__block">
+					<i class="ion-images list__icon"></i>
+					<span class="list__title">Akad</span>
+					<p class="list__description">Верстка многостраничного макета с применением фреймворка Bootstrap.</p>
+				</div>
+			</a>
+		</li>
+		<li class="list__item">
+			<a class="list__link" href="https://victoriakalashnyk.github.io/GuriGuriNyoi/">
+				<img class="list__image" src="image/project-3.jpg" alt="project-3" width="230" height="300">
+				<div class="list__block">
+					<i class="ion-eye list__icon"></i>
+					<span class="list__title">Guri Guri Nyoi</span>
+					<p class="list__description">Верстка одностраничного макета.</p>
+				</div>
+			</a>
+		</li>
 	</ul>
 
 </body>
