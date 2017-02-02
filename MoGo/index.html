@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>MoGo</title>
+	
+	<meta charset="utf-8">
+	<meta name="keywords" content="molestiae, maxime, labore, dolorem, quod">
+	<meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste nostrum blanditiis cupiditate laborum fuga quisquam quas praesentium veritatis architecto. Cumque!">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Victoria Kalashnyk">
+	
+	<link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/ionicons.min.css"> <!-- ? -->
+	<link rel="stylesheet/less" href="less/style.less">
+	<link rel="stylesheet" href="css/style.css">  
+	
+	<script src="js/jquery-3.1.1.min.js"></script>
+	
+</head>
+<body>	
+	
+<!-- HEADER -->
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="header__logo">
+						<img class="header__image" src="image/logo.png" alt="LOGO">
+					</div>
+				</div>
+				<div class="col-lg-8">
+					<nav class="header__navigation">
+						<ul class="menu">
+							<li class="menu__item"><a class="menu__link menu__link_focused" href="#about">about</a></li>
+							<li class="menu__item"><a class="menu__link menu__link_focused" href="#service">service</a></li>
+							<li class="menu__item"><a class="menu__link menu__link_focused" href="#work">work</a></li>
+							<li class="menu__item"><a class="menu__link menu__link_focused" href="#blog">blog</a></li>
+							<li class="menu__item"><a class="menu__link menu__link_focused" href="#contact">contact</a></li>
+							<li class="menu__item"><a class="menu__link menu__link_focused" href="#"><i class="ion-ios-cart-outline"></i></a></li>
+							<li class="menu__item"><a class="menu__link menu__link_focused" href="#"><i class="ion-android-search"></i></a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>	
+
+<!-- BANNER -->
+	<section class="banner">
+		<div class="banner__content">
+		
+			<div class="title">
+				<ul class="title__list">
+					<li class="title__slide">
+						<span class="title__small italic-text">Creative Template</span>
+						<h1 class="title__big">Welcome<br> to MoGo</h1>
+						<div class="title__line line"></div>
+						<a class="title__button title__button_focused">Learn more</a>
+					</li>
+					<li class="title__slide">
+						<span class="title__small italic-text">Work Template</span>
+						<h1 class="title__big">Lorem<br> ipsum in</h1>
+						<div class="title__line line"></div>
+						<a class="title__button title__button_focused">Learn more</a>
+					</li>
+					<li class="title__slide">
+						<span class="title__small italic-text">About Template</span>
+						<h1 class="title__big">Ipsum<br> iat elit</h1>
+						<div class="title__line line"></div>
+						<a class="title__button title__button_focused">Learn more</a>
+					</li>
+					<li class="title__slide">
+						<span class="title__small italic-text">Contacts Template</span>
+						<h1 class="title__big">Aliquid<br> corporis</h1>
+						<div class="title__line line"></div>
+						<a class="title__button title__button_focused">Learn more</a>
+					</li>
+				</ul>
+			</div>
+			
+        <!-- DOTS -->			
+			<div class="container">
+				<div class="row">
+					<div class="line-navigation">
+						<div class="col-lg-3 col-sm-3 col-xs-3">
+							<div class="slide" onclick="currentSlide(1)">
+								<span class="slide__number">01 </span>
+								<span class="slide__word">intro</span>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-3 col-xs-3">	
+							<div class="slide" onclick="currentSlide(2)">
+								<span class="slide__number">02 </span>
+								<span class="slide__word">work</span>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-3 col-xs-3">	
+							<div class="slide" onclick="currentSlide(3)">
+								<span class="slide__number">03 </span>
+								<span class="slide__word">about</span>
+							</div>
+						</div>				
+						<div class="col-lg-3 col-sm-3 col-xs-3">	
+							<div class="slide" onclick="currentSlide(4)">
+								<span class="slide__number">04 </span>
+								<span class="slide__word">contacts</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+			
+		</div> 
+	</section>
+	
+<!-- ABOUT US -->
+	<section class="about">
+		<div class="container">
+			<div class="row">
+				<span class="italic-text">What we do</span>
+				<h3 class="caption">Story about us</h3>
+				<div class="line"></div>
+				<p class="sentence">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+				</p>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-4 col-sm-6 col-xs-12" style="padding:0;">
+					<div class="picture">
+						<img class="picture__image" src="image/work-1.jpg" alt="work-1" width="380" height="250">
+						<p class="picture__info">
+							<i class="picture__icon ion-person-stalker"></i><br>
+							<span class="picture__description">Super team</span>
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12" style="padding:0;">
+					<div class="picture">
+						<img class="picture__image" src="image/work-2.jpg" alt="work-2" width="380" height="250">
+						<p class="picture__info">
+							<i class="picture__icon ion-person-stalker"></i><br>
+							<span class="picture__description">Good team</span>
+						</p>
+					</div>	
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12" style="padding:0;">
+				    <div class="picture">
+						<img class="picture__image" src="image/work-3.jpg" alt="work-3" width="380" height="250">
+						<p class="picture__info">
+							<i class="picture__icon ion-person-stalker"></i><br>
+							<span class="picture__description">Happy team</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</section>
+	
+<!-- FACTS -->
+	<div class="facts">
+		<div class="container">
+			<div class="fact">	
+				<span class="fact__number projects">0</span>
+				<p class="fact__text">web design projects</p>
+			</div>
+			<div class="fact">	
+				<span class="fact__number client">0</span>
+				<p class="fact__text">happy client</p>
+			</div>
+			<div class="fact">	
+				<span class="fact__number winner">0</span>
+				<p class="fact__text">award winner</p>
+			</div>
+			<div class="fact">	
+				<span class="fact__number cup">0</span>
+				<p class="fact__text">cup of coffee</p>
+			</div>
+			<div class="fact">	
+				<span class="fact__number members">0</span>
+				<p class="fact__text">members</p>
+			</div>
+		</div>
+	</div>
+	
+<!-- SERVICES -->
+	<section class="services">
+		<div class="container">
+			<div class="row">
+				<span class="italic-text">We work with</span>
+				<h3 class="caption">Amazing services</h3>
+				<div class="line"></div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="service">
+						<i class="service__icon ion-ios-alarm-outline"></i>
+						<span class="service__paragraph paragraph">Photography</span>
+						<p class="service__description">
+						    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+							Mollitia, facere repudiandae numquam.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="service">
+						<i class="service__icon ion-arrow-graph-up-right"></i>
+						<span class="service__paragraph paragraph">Web design</span>
+						<p class="service__description">
+						    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+							Mollitia, facere repudiandae numquam.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="service">
+						<i class="service__icon ion-ios-monitor-outline"></i>
+						<span class="service__paragraph paragraph">Creativity</span>
+						<p class="service__description">
+						    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+							Mollitia, facere repudiandae numquam.
+						</p>
+					</div>
+				</div>
+				<div class="long-line"></div>
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="service">
+						<i class="service__icon ion-ios-bookmarks-outline"></i>
+						<span class="service__paragraph paragraph">Seo</span>
+						<p class="service__description">
+						    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+							Mollitia, facere repudiandae numquam.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="service">
+						<i class="service__icon ion-ios-home"></i>
+						<span class="service__paragraph paragraph">CSS/HTML</span>
+						<p class="service__description">
+						    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+							Mollitia, facere repudiandae numquam.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="service">
+						<i class="service__icon ion-android-expand"></i>
+						<span class="service__paragraph paragraph">Digital</span>
+						<p class="service__description">
+						    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+							Mollitia, facere repudiandae numquam.
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</div>	
+	</section>
+	
+<!-- FEAUTURE --> 
+	<section class="feauture">
+		<div class="container">
+			<span class="italic-text">For all devices</span>
+			<h3 class="caption">Unique design</h3>
+			<div class="line"></div>
+			<div class="image"></div>
+		</div>
+	</section>
+
+<!-- SERVICES Part 2 -->
+	<section class="serv">
+		<div class="container">
+			<div class="row">
+				<span class="italic-text">Service</span>
+				<h3 class="caption">what we do</h3>
+				<div class="line"></div>
+				<p class="sentence">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+				</p>
+			</div>
+			<div class="row">
+			    <div class="col-md-6 col-sm-6">
+				    <div class="serv__block">
+					    <img class="serv__image" src="image/serv.jpg" alt="Service" width="570" height="380">
+					</div>
+				</div>
+				
+				<div class="col-md-6 col-sm-6">
+				
+				<!-- Accordion -->
+					<div class="accordion panel-group" id="accordion" role="tablist" aria-mulitsectable="true">
+						<div class="panel panel-default active">
+						    <div class="panel-heading" role="tab" id="heading1">
+							    <h4 class="panel-title paragraph">
+								    <a class="accordion__link accordion__link_focused" href="#collapse1" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapse1">
+								        <i class="accordion__icon ion-image"></i>
+										<span class="accordion__word">Photography</span>
+								    </a>
+								</h4>
+							</div>
+							<div id="collapse1" class="panel-collapse collapse in" role="tabpanel" aria-labellebdy="heading1">
+							    <div class="panel-body">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+									Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+									dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+							</div>
+						</div>
+						
+						<div class="panel panel-default">
+						    <div class="panel-heading" role="tab" id="heading1">
+							    <h4 class="panel-title paragraph">
+								    <a class="accordion__link accordion__link_focused" href="#collapse2" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapse2">
+								        <i class="accordion__icon ion-android-options"></i>
+										<span class="accordion__word">creativity</span>
+								    </a>
+								</h4>
+							</div>
+							<div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labellebdy="heading2">
+							    <div class="panel-body">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+									Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+									dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+							</div>
+						</div>
+						
+						<div class="panel panel-default">
+						    <div class="panel-heading" role="tab" id="heading1">
+							    <h4 class="panel-title paragraph">
+								    <a class="accordion__link accordion__link_focused" href="#collapse3" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapse3">
+								        <i class="accordion__icon ion-disc"></i>
+										<span class="accordion__word">web design</span>
+								    </a>
+								</h4>
+							</div>
+							<div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labellebdy="heading3">
+							    <div class="panel-body">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+									dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</section>
+	
+<!-- QUOTATION -->
+	<section class="quotation">
+	    <div class="container">
+			<div class="row">
+				<div class="quote carousel slide" id="myCarousel">
+					<div class="carousel-inner">
+					    <div class="quote__item item active">
+						    <i class="quote__icon ion-chatboxes"></i>
+							<div class="quote__content">	
+								<p class="quote__description">
+									“Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+									sed do eiusmod tempor incididunt ut labore et dolore magna 
+									aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+								</p>
+								<span class="quote__name italic-text">Jon Doe</span>
+							</div>
+						</div>
+					    <div class="quote__item item">
+						    <i class="quote__icon ion-chatboxes"></i>
+							<div class="quote__content">	
+								<p class="quote__description">
+									“Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+									sed do eiusmod tempor incididunt ut labore et dolore magna 
+									aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+								</p>
+								<span class="quote__name italic-text">Mark Smith</span>
+							</div>
+						</div>
+					    <div class="quote__item item">
+						    <i class="quote__icon ion-chatboxes"></i>
+							<div class="quote__content">	
+								<p class="quote__description">
+									“Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+									sed do eiusmod tempor incididunt ut labore et dolore magna 
+									aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+								</p>
+								<span class="quote__name italic-text">Kate Jolie</span>
+							</div>
+						</div>
+					    <div class="quote__item item">
+						    <i class="quote__icon ion-chatboxes"></i>
+							<div class="quote__content">
+								<p class="quote__description">
+									“Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+									sed do eiusmod tempor incididunt ut labore et dolore magna 
+									aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+								</p>
+								<span class="quote__name italic-text">Brad Pitt</span>
+							</div>
+						</div>
+					</div>
+					
+					<a class="quote__nav quote__nav_focused carousel-control left" href="#myCarousel" data-slide="prev"><i class="nav__icon ion-chevron-left"></i></a>
+                    <a class="quote__nav quote__nav_focused carousel-control right" href="#myCarousel" data-slide="next"><i class="nav__icon ion-chevron-right"></i></a>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-- OUT TEAM -->
+	<section class="team">
+	    <div class="container">
+			<div class="row">
+			    <span class="italic-text">Who we are</span>
+				<h3 class="caption">Meet our team</h3>
+				<div class="line"></div>
+				<p class="sentence">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+				</p>
+			</div>
+			
+		<!-- Photography of our team -->
+			<div class="row">
+				<div class="col-md-4 col-sm-6 col-xs-12" style="padding:0;">
+					<div class="person">
+						<img class="person__image" src="image/person-1.jpg" alt="person-1" width="380" height="470">
+						<div class="person__icons">
+						   <a class="person__link person__link_focused" href="https://www.facebook.com"><i class="person__icon ion-social-facebook"></i></a>
+						   <a class="person__link person__link_focused" href="https://twitter.com"><i class="person__icon ion-social-twitter"></i></a>
+						   <a class="person__link person__link_focused" href="https://ru.pinterest.com"><i class="person__icon ion-social-pinterest"></i></a>
+						   <a class="person__link person__link_focused" href="https://www.instagram.com"><i class="person__icon ion-social-instagram-outline"></i></a>
+						</div>
+					</div>
+					<p class="info">
+						<span class="info__name paragraph">Matthew Dix</span><br>
+						<span class="info__profession">Graphic Design</span>
+					</p>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12" style="padding:0;">
+					<div class="person">
+						<img class="person__image" src="image/person-2.jpg" alt="person-2" width="380" height="470">
+						<div class="person__icons">
+						   <a class="person__link person__link_focused" href="https://www.facebook.com"><i class="person__icon ion-social-facebook"></i></a>
+						   <a class="person__link person__link_focused" href="https://twitter.com"><i class="person__icon ion-social-twitter"></i></a>
+						   <a class="person__link person__link_focused" href="https://ru.pinterest.com"><i class="person__icon ion-social-pinterest"></i></a>
+						   <a class="person__link person__link_focused" href="https://www.instagram.com"><i class="person__icon ion-social-instagram-outline"></i></a>
+						</div>
+					</div>	
+					<p class="info">
+						<span class="info__name paragraph">Christopher Campbell</span><br>
+						<span class="info__profession">Branding/UX design</span>
+					</p>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12" style="padding:0;">
+				    <div class="person">
+						<img class="person__image" src="image/person-3.jpg" alt="person-3" width="380" height="470">
+						<div class="person__icons">
+						   <a class="person__link person__link_focused" href="https://www.facebook.com"><i class="person__icon ion-social-facebook"></i></a>
+						   <a class="person__link person__link_focused" href="https://twitter.com"><i class="person__icon ion-social-twitter"></i></a>
+						   <a class="person__link person__link_focused" href="https://ru.pinterest.com"><i class="person__icon ion-social-pinterest"></i></a>
+						   <a class="person__link person__link_focused" href="https://www.instagram.com"><i class="person__icon ion-social-instagram-outline"></i></a>
+						</div>
+					</div>
+					<p class="info">
+						<span class="info__name paragraph">Michael Fertig</span><br>
+						<span class="info__profession">Developer</span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-- LOGOS -->
+	<section class="logos">
+	    <div class="container">
+			<div class="row">
+			    <div class="col-md-2 col-sm-4 col-xs-6">
+				    <div class="logotype">
+					    <img class="logotype__image" src="image/logo-1.jpg" alt="logo-1">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-6">
+				    <div class="logotype">
+					    <img class="logotype__image" src="image/logo-2.jpg" alt="logo-2">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-6">
+				    <div class="logotype">
+					    <img class="logotype__image" src="image/logo-3.jpg" alt="logo-3">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-6">
+				    <div class="logotype">
+					    <img class="logotype__image" src="image/logo-4.jpg" alt="logo-4">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-6">
+				    <div class="logotype">
+					    <img class="logotype__image" src="image/logo-5.jpg" alt="logo-5">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-6">
+				    <div class="logotype">
+					    <img class="logotype__image" src="image/logo-6.jpg" alt="logo-6">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+			
+	
+	
+	
+	
+	
+<!-- FOOTER -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/main.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+
+	
+</body>
+</html>
