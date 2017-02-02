@@ -39,7 +39,7 @@ a, a:hover{
 
 .list__item {
 	display: inline-table;
-	margin-right: 10px;
+	margin: 0 10px 10px 0;
 	position: relative;
 }
 
