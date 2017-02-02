@@ -7,7 +7,7 @@
   03. Header slider
   04. Header
   05. About
-  06. Video 
+  06. City
   07. Expertise 
   08. Team 
   09. Projects 
@@ -201,32 +201,27 @@ a, a:hover {text-decoration: none;}
 	margin: 25px 0;
 }
 
-/* ----- Video ----- */
-.video {
+/* ----- City ----- */
+.city {
 	min-height: 550px;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
 	background: url(../image/bg-video.jpg) no-repeat 50% 50%;
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
 	        background-size: cover;
 }
-
-.play {
-	margin: 0 auto;
-	padding-top: 200px;
-	width: 160px;
-	min-height: 150px;
-	font: 800 16px/16px 'Roboto', Arial, sans-serif;
+.city h2 {
 	color: #fff;
-	text-transform: uppercase;
-	text-align: center;
+	margin: 50px 0 25px;
 }
-
-.play p {margin-top: 30px;}
 
 /* ----- Expertise ----- */
 .expertise .container {text-align: center;}
 
-.expertise .line {background: #c6c4c9;}	
+.expertise .line,
+.city .line {background: #c6c4c9;}	
 
 .column {
 	width: 33%;
