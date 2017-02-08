@@ -11,7 +11,7 @@
 	
 	<link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/ionicons.min.css"> <!-- ? -->
+	<link rel="stylesheet" href="css/ionicons.min.css">
 	<link rel="stylesheet/less" href="less/style.less">
 	<link rel="stylesheet" href="css/style.css">  
 	
@@ -25,98 +25,100 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4">
+				
+				    <!-- logotype -->
 					<div class="header__logo">
-						<img class="header__image" src="image/logo.png" alt="LOGO">
+						<a href="#banner"><img class="header__image" src="image/logo.png" alt="LOGO"></a>
 					</div>
 				</div>
 				<div class="col-lg-8">
+				
+				    <!-- website navigation -->
 					<nav class="header__navigation">
 						<ul class="menu">
 							<li class="menu__item"><a class="menu__link menu__link_focused" href="#about">about</a></li>
 							<li class="menu__item"><a class="menu__link menu__link_focused" href="#service">service</a></li>
 							<li class="menu__item"><a class="menu__link menu__link_focused" href="#work">work</a></li>
-							<li class="menu__item"><a class="menu__link menu__link_focused" href="#blog">blog</a></li>
+							<li class="menu__item"><a class="menu__link menu__link_focused" href="#">blog</a></li>
 							<li class="menu__item"><a class="menu__link menu__link_focused" href="#contact">contact</a></li>
 							<li class="menu__item"><a class="menu__link menu__link_focused" href="#"><i class="ion-ios-cart-outline"></i></a></li>
 							<li class="menu__item"><a class="menu__link menu__link_focused" href="#"><i class="ion-android-search"></i></a></li>
 						</ul>
 					</nav>
+					
 				</div>
 			</div>
 		</div>
 	</header>	
 
 <!-- BANNER -->
-	<section class="banner">
-		<div class="banner__content">
-		
-			<div class="title">
-				<ul class="title__list">
-					<li class="title__slide">
-						<span class="title__small italic-text">Creative Template</span>
-						<h1 class="title__big">Welcome<br> to MoGo</h1>
-						<div class="title__line line"></div>
-						<a class="title__button title__button_focused">Learn more</a>
-					</li>
-					<li class="title__slide">
-						<span class="title__small italic-text">Work Template</span>
-						<h1 class="title__big">Lorem<br> ipsum in</h1>
-						<div class="title__line line"></div>
-						<a class="title__button title__button_focused">Learn more</a>
-					</li>
-					<li class="title__slide">
-						<span class="title__small italic-text">About Template</span>
-						<h1 class="title__big">Ipsum<br> iat elit</h1>
-						<div class="title__line line"></div>
-						<a class="title__button title__button_focused">Learn more</a>
-					</li>
-					<li class="title__slide">
-						<span class="title__small italic-text">Contacts Template</span>
-						<h1 class="title__big">Aliquid<br> corporis</h1>
-						<div class="title__line line"></div>
-						<a class="title__button title__button_focused">Learn more</a>
-					</li>
-				</ul>
-			</div>
-			
-        <!-- DOTS -->			
-			<div class="container">
+	<section class="banner" id="banner">
+	    <div class="container">
+			<div class="banner__content carousel slide" id="myCarousel" data-ride="carousel">
+			    
+				<!-- slider -->
 				<div class="row">
-					<div class="line-navigation">
-						<div class="col-lg-3 col-sm-3 col-xs-3">
-							<div class="slide" onclick="currentSlide(1)">
-								<span class="slide__number">01 </span>
-								<span class="slide__word">intro</span>
+					<div class="title">
+						<div class="title__list carousel-inner">
+							<div class="title__slide item active">
+								<span class="title__small italic-text">Creative Template</span>
+								<h1 class="title__big">Welcome<br> to MoGo</h1>
+								<div class="title__line line"></div>
+								<a href="" class="title__button title__button_focused">Learn more</a>
 							</div>
-						</div>
-						<div class="col-lg-3 col-sm-3 col-xs-3">	
-							<div class="slide" onclick="currentSlide(2)">
-								<span class="slide__number">02 </span>
-								<span class="slide__word">work</span>
+							<div class="title__slide item">
+								<span class="title__small italic-text">Work Template</span>
+								<h1 class="title__big">Lorem<br> ipsum in</h1>
+								<div class="title__line line"></div>
+								<a href="#about" class="title__button title__button_focused">Learn more</a>
 							</div>
-						</div>
-						<div class="col-lg-3 col-sm-3 col-xs-3">	
-							<div class="slide" onclick="currentSlide(3)">
-								<span class="slide__number">03 </span>
-								<span class="slide__word">about</span>
+							<div class="title__slide item">
+								<span class="title__small italic-text">About Template</span>
+								<h1 class="title__big">Ipsum<br> iat elit</h1>
+								<div class="title__line line"></div>
+								<a href="#work" class="title__button title__button_focused">Learn more</a>
 							</div>
-						</div>				
-						<div class="col-lg-3 col-sm-3 col-xs-3">	
-							<div class="slide" onclick="currentSlide(4)">
-								<span class="slide__number">04 </span>
-								<span class="slide__word">contacts</span>
+							<div class="title__slide item">
+								<span class="title__small italic-text">Contacts Template</span>
+								<h1 class="title__big">Aliquid<br> corporis</h1>
+								<div class="title__line line"></div>
+								<a href="#contact" class="title__button title__button_focused">Learn more</a>
 							</div>
 						</div>
 					</div>
 				</div>
+				
+			    <!-- dots -->			
+				<div class="row">
+					<div class="line-navigation carousel-indicators">
+						<div class="dot active" data-target="#myCarousel" data-slide-to="0">
+							<span class="dot__number">01 </span>
+							<span class="dot__word">intro</span>
+						</div>
+						<div class="dot"  data-target="#myCarousel" data-slide-to="1">
+							<span class="dot__number">02 </span>
+							<span class="dot__word">work</span>
+						</div>
+						<div class="dot"  data-target="#myCarousel" data-slide-to="2">
+							<span class="dot__number">03 </span>
+							<span class="dot__word">about</span>
+						</div>
+						<div class="dot"  data-target="#myCarousel" data-slide-to="3">
+							<span class="dot__number">04 </span>
+							<span class="dot__word">contacts</span>
+						</div>
+					</div>
+				</div>
+				
 			</div>	
-			
 		</div> 
 	</section>
 	
 <!-- ABOUT US -->
-	<section class="about">
+	<section class="about" id="about">
 		<div class="container">
+		   
+    		<!-- topic -->
 			<div class="row">
 				<span class="italic-text">What we do</span>
 				<h3 class="caption">Story about us</h3>
@@ -128,9 +130,10 @@
 				</p>
 			</div>
 			
+			<!-- photo -->
 			<div class="row">
 				<div class="col-md-4 col-sm-6 col-xs-12" style="padding:0;">
-					<div class="picture">
+					<div class="picture picture_focused">
 						<img class="picture__image" src="image/work-1.jpg" alt="work-1" width="380" height="250">
 						<p class="picture__info">
 							<i class="picture__icon ion-person-stalker"></i><br>
@@ -139,7 +142,7 @@
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-6 col-xs-12" style="padding:0;">
-					<div class="picture">
+					<div class="picture picture_focused">
 						<img class="picture__image" src="image/work-2.jpg" alt="work-2" width="380" height="250">
 						<p class="picture__info">
 							<i class="picture__icon ion-person-stalker"></i><br>
@@ -148,7 +151,7 @@
 					</div>	
 				</div>
 				<div class="col-md-4 col-sm-6 col-xs-12" style="padding:0;">
-				    <div class="picture">
+				    <div class="picture picture_focused">
 						<img class="picture__image" src="image/work-3.jpg" alt="work-3" width="380" height="250">
 						<p class="picture__info">
 							<i class="picture__icon ion-person-stalker"></i><br>
@@ -157,6 +160,7 @@
 					</div>
 				</div>
 			</div>
+			
 		</div>	
 	</section>
 	
@@ -164,37 +168,40 @@
 	<div class="facts">
 		<div class="container">
 			<div class="fact">	
-				<span class="fact__number projects">0</span>
+				<span class="fact__number" id="projects">0</span>
 				<p class="fact__text">web design projects</p>
 			</div>
 			<div class="fact">	
-				<span class="fact__number client">0</span>
+				<span class="fact__number" id="client">0</span>
 				<p class="fact__text">happy client</p>
 			</div>
 			<div class="fact">	
-				<span class="fact__number winner">0</span>
+				<span class="fact__number" id="winner">0</span>
 				<p class="fact__text">award winner</p>
 			</div>
 			<div class="fact">	
-				<span class="fact__number cup">0</span>
+				<span class="fact__number" id="cup">0</span>
 				<p class="fact__text">cup of coffee</p>
 			</div>
 			<div class="fact">	
-				<span class="fact__number members">0</span>
+				<span class="fact__number" id="members">0</span>
 				<p class="fact__text">members</p>
 			</div>
 		</div>
 	</div>
 	
 <!-- SERVICES -->
-	<section class="services">
+	<section class="services" id="service">
 		<div class="container">
+		
+		    <!-- topic -->
 			<div class="row">
 				<span class="italic-text">We work with</span>
 				<h3 class="caption">Amazing services</h3>
 				<div class="line"></div>
 			</div>
 			
+			<!-- subsections -->
 			<div class="row">
 				<div class="col-md-4 col-sm-6 col-xs-12">
 					<div class="service">
@@ -257,8 +264,8 @@
 						</p>
 					</div>
 				</div>
-
 			</div>
+			
 		</div>	
 	</section>
 	
@@ -268,13 +275,15 @@
 			<span class="italic-text">For all devices</span>
 			<h3 class="caption">Unique design</h3>
 			<div class="line"></div>
-			<div class="image"></div>
+			<div class="feauture__image"></div>
 		</div>
 	</section>
 
 <!-- SERVICES Part 2 -->
 	<section class="serv">
 		<div class="container">
+		
+		    <!-- topic -->
 			<div class="row">
 				<span class="italic-text">Service</span>
 				<h3 class="caption">what we do</h3>
@@ -285,17 +294,20 @@
 					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 				</p>
 			</div>
+			
 			<div class="row">
+			
+			    <!-- photo -->
 			    <div class="col-md-6 col-sm-6">
 				    <div class="serv__block">
 					    <img class="serv__image" src="image/serv.jpg" alt="Service" width="570" height="380">
 					</div>
 				</div>
 				
+				<!-- accordion -->
 				<div class="col-md-6 col-sm-6">
-				
-				<!-- Accordion -->
 					<div class="accordion panel-group" id="accordion" role="tablist" aria-mulitsectable="true">
+						<!-- panel 1 -->
 						<div class="panel panel-default active">
 						    <div class="panel-heading" role="tab" id="heading1">
 							    <h4 class="panel-title paragraph">
@@ -314,9 +326,9 @@
 								</div>
 							</div>
 						</div>
-						
+						<!-- panel 2 -->
 						<div class="panel panel-default">
-						    <div class="panel-heading" role="tab" id="heading1">
+						    <div class="panel-heading" role="tab" id="heading2">
 							    <h4 class="panel-title paragraph">
 								    <a class="accordion__link accordion__link_focused" href="#collapse2" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapse2">
 								        <i class="accordion__icon ion-android-options"></i>
@@ -328,14 +340,13 @@
 							    <div class="panel-body">
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 									Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-									dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+									dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 								</div>
 							</div>
 						</div>
-						
+						<!-- panel 3 -->
 						<div class="panel panel-default">
-						    <div class="panel-heading" role="tab" id="heading1">
+						    <div class="panel-heading" role="tab" id="heading3">
 							    <h4 class="panel-title paragraph">
 								    <a class="accordion__link accordion__link_focused" href="#collapse3" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapse3">
 								        <i class="accordion__icon ion-disc"></i>
@@ -348,12 +359,18 @@
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 									Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
 									dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+									sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+									dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
 									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 								</div>
 							</div>
 						</div>
+						
 					</div>
 				</div>	
+				
 			</div>
 		</div>
 	</section>
@@ -362,7 +379,9 @@
 	<section class="quotation">
 	    <div class="container">
 			<div class="row">
-				<div class="quote carousel slide" id="myCarousel">
+			    
+				<!-- slider -->
+				<div class="quote carousel slide" id="myCarousel-1">
 					<div class="carousel-inner">
 					    <div class="quote__item item active">
 						    <i class="quote__icon ion-chatboxes"></i>
@@ -410,8 +429,9 @@
 						</div>
 					</div>
 					
-					<a class="quote__nav quote__nav_focused carousel-control left" href="#myCarousel" data-slide="prev"><i class="nav__icon ion-chevron-left"></i></a>
-                    <a class="quote__nav quote__nav_focused carousel-control right" href="#myCarousel" data-slide="next"><i class="nav__icon ion-chevron-right"></i></a>
+					<!-- navigation -->
+					<a class="quote__nav quote__nav_focused carousel-control left" href="#myCarousel-1" data-slide="prev"><i class="quote__nav_icon ion-chevron-left"></i></a>
+                    <a class="quote__nav quote__nav_focused carousel-control right" href="#myCarousel-1" data-slide="next"><i class="quote__nav_icon ion-chevron-right"></i></a>
 
 				</div>
 			</div>
@@ -421,6 +441,8 @@
 <!-- OUT TEAM -->
 	<section class="team">
 	    <div class="container">
+		
+		    <!-- topic -->
 			<div class="row">
 			    <span class="italic-text">Who we are</span>
 				<h3 class="caption">Meet our team</h3>
@@ -432,10 +454,10 @@
 				</p>
 			</div>
 			
-		<!-- Photography of our team -->
+		    <!-- photo of our team -->
 			<div class="row">
 				<div class="col-md-4 col-sm-6 col-xs-12" style="padding:0;">
-					<div class="person">
+					<div class="person person_focused">
 						<img class="person__image" src="image/person-1.jpg" alt="person-1" width="380" height="470">
 						<div class="person__icons">
 						   <a class="person__link person__link_focused" href="https://www.facebook.com"><i class="person__icon ion-social-facebook"></i></a>
@@ -450,7 +472,7 @@
 					</p>
 				</div>
 				<div class="col-md-4 col-sm-6 col-xs-12" style="padding:0;">
-					<div class="person">
+					<div class="person person_focused">
 						<img class="person__image" src="image/person-2.jpg" alt="person-2" width="380" height="470">
 						<div class="person__icons">
 						   <a class="person__link person__link_focused" href="https://www.facebook.com"><i class="person__icon ion-social-facebook"></i></a>
@@ -465,7 +487,7 @@
 					</p>
 				</div>
 				<div class="col-md-4 col-sm-6 col-xs-12" style="padding:0;">
-				    <div class="person">
+				    <div class="person person_focused">
 						<img class="person__image" src="image/person-3.jpg" alt="person-3" width="380" height="470">
 						<div class="person__icons">
 						   <a class="person__link person__link_focused" href="https://www.facebook.com"><i class="person__icon ion-social-facebook"></i></a>
@@ -480,6 +502,7 @@
 					</p>
 				</div>
 			</div>
+			
 		</div>
 	</section>
 
@@ -489,54 +512,462 @@
 			<div class="row">
 			    <div class="col-md-2 col-sm-4 col-xs-6">
 				    <div class="logotype">
-					    <img class="logotype__image" src="image/logo-1.jpg" alt="logo-1">
+					    <img class="logotype__image logotype__image_focused" src="image/logo-1.jpg" alt="logo-1">
 					</div>
 				</div>
 				<div class="col-md-2 col-sm-4 col-xs-6">
 				    <div class="logotype">
-					    <img class="logotype__image" src="image/logo-2.jpg" alt="logo-2">
+					    <img class="logotype__image logotype__image_focused" src="image/logo-2.jpg" alt="logo-2">
 					</div>
 				</div>
 				<div class="col-md-2 col-sm-4 col-xs-6">
 				    <div class="logotype">
-					    <img class="logotype__image" src="image/logo-3.jpg" alt="logo-3">
+					    <img class="logotype__image logotype__image_focused" src="image/logo-3.jpg" alt="logo-3">
 					</div>
 				</div>
 				<div class="col-md-2 col-sm-4 col-xs-6">
 				    <div class="logotype">
-					    <img class="logotype__image" src="image/logo-4.jpg" alt="logo-4">
+					    <img class="logotype__image logotype__image_focused" src="image/logo-4.jpg" alt="logo-4">
 					</div>
 				</div>
 				<div class="col-md-2 col-sm-4 col-xs-6">
 				    <div class="logotype">
-					    <img class="logotype__image" src="image/logo-5.jpg" alt="logo-5">
+					    <img class="logotype__image logotype__image_focused" src="image/logo-5.jpg" alt="logo-5">
 					</div>
 				</div>
 				<div class="col-md-2 col-sm-4 col-xs-6">
 				    <div class="logotype">
-					    <img class="logotype__image" src="image/logo-6.jpg" alt="logo-6">
+					    <img class="logotype__image logotype__image_focused" src="image/logo-6.jpg" alt="logo-6">
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-			
 	
-	
-	
-	
-	
-<!-- FOOTER -->
-	<footer class="footer">
-		<div class="container">
+<!-- WHAT WE DO -->
+	<section class="work" id="work">
+	    <div class="container">
+		
+		    <!-- topic -->
 			<div class="row">
-				
+			    <span class="italic-text">What we do</span>
+				<h3 class="caption">Some of our work</h3>
+				<div class="line"></div>
+				<p class="sentence">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+				</p>
 			</div>
+		</div>
+		
+		<!-- our project -->
+		<div class="project">
+			<div class="project__block">
+			    <div class="project__info">
+				    <img src="image/project-1.jpg" alt="project" class="project__image project__image_focused" width="480" height="390">
+					<div class="project__content project__content_position">
+						<i class="project__icon ion-image"></i><br>
+						<span class="project__title paragraph">creatively designed</span>
+						<p class="project__description">Lorem ipsum dolor sit.</p>
+					</div>
+				</div>
+				<div class="project__info">
+				    <img src="image/project-5.jpg" alt="project" class="project__image project__image_focused" width="480" height="390">
+			        <div class="project__content project__content_position">
+						<i class="project__icon ion-image"></i><br>
+						<span class="project__title paragraph">creatively designed</span>
+						<p class="project__description">Lorem ipsum dolor sit.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="project__block">
+			    <div class="project__info">
+		            <img src="image/project-2.jpg" alt="project" class="project__image project__image_focused" width="480" height="390">
+				    <div class="project__content project__content_position">
+						<i class="project__icon ion-image"></i><br>
+						<span class="project__title paragraph">creatively designed</span>
+						<p class="project__description">Lorem ipsum dolor sit.</p>
+					</div>
+				</div>
+				<div class="project__info">
+				    <img src="image/project-6.jpg" alt="project" class="project__image project__image_focused" width="480" height="390">
+				    <div class="project__content project__content_position">
+						<i class="project__icon ion-image"></i><br>
+						<span class="project__title paragraph">creatively designed</span>
+						<p class="project__description">Lorem ipsum dolor sit.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="project__block">
+		        <div class="project__info">
+			        <img src="image/project-3.jpg" alt="project" class="project__image project__image_focused" width="480" height="780">
+				    <div class="project__content project__content_position">
+						<i class="project__icon ion-image"></i><br>
+						<span class="project__title paragraph">creatively designed</span>
+						<p class="project__description">Lorem ipsum dolor sit.</p>
+					</div>
+				</div>
+		    </div>
+			
+			<div class="project__block">
+			    <div class="project__info">
+			        <img src="image/project-4.jpg" alt="project" class="project__image project__image_focused" width="480" height="390">
+				    <div class="project__content project__content_position">
+						<i class="project__icon ion-image"></i><br>
+						<span class="project__title paragraph">creatively designed</span>
+						<p class="project__description">Lorem ipsum dolor sit.</p>
+					</div>
+				</div>
+				<div class="project__info">
+				    <img src="image/project-7.jpg" alt="project" class="project__image project__image_focused" width="480" height="390">
+				    <div class="project__content project__content_position">
+						<i class="project__icon ion-image"></i><br>
+						<span class="project__title paragraph">creatively designed</span>
+						<p class="project__description">Lorem ipsum dolor sit.</p>
+					</div>
+				</div>
+		    </div>
+		</div>
+		
+	</section>
+
+<!-- TESTIMONIAL -->
+	<section class="testimonial">
+	    <div class="container">
+			<div class="row">
+			
+			    <!-- slider -->
+			    <div class="tes carousel slide" id="myCarousel-2">
+					<div class="carousel-inner">
+					    <div class="testimonial__item item active">
+						    <img src="image/photo-1.jpg" alt="photo" class="testimonial__image img-circle" width="210" height="210">
+							<div class="testimonial__content">	
+								<p class="testimonial__description">
+									“Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+									sed do eiusmod tempor incididunt ut labore et dolore magna 
+									aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+								</p>
+								<span class="testimonial__name italic-text">Jon Doe</span>
+							</div>
+						</div>
+					    <div class="testimonial__item item">
+						    <img src="image/photo-2.jpg" alt="photo" class="testimonial__image img-circle" width="210" height="210">
+							<div class="testimonial__content">	
+								<p class="testimonial__description">
+									“Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+									sed do eiusmod tempor incididunt ut labore et dolore magna 
+									aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+								</p>
+								<span class="testimonial__name italic-text">Emily Bronte</span>
+							</div>
+						</div>
+					    <div class="testimonial__item item">
+						    <img src="image/photo-3.jpg" alt="photo" class="testimonial__image img-circle" width="210" height="210">
+							<div class="testimonial__content">	
+								<p class="testimonial__description">
+									“Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+									sed do eiusmod tempor incididunt ut labore et dolore magna 
+									aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+								</p>
+								<span class="testimonial__name italic-text">Angie Jolie</span>
+							</div>
+						</div>
+					    <div class="testimonial__item item">
+							<img src="image/photo-4.jpg" alt="photo" class="testimonial__image img-circle">
+							<div class="testimonial__content">	
+								<p class="testimonial__description">
+									“Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+									sed do eiusmod tempor incididunt ut labore et dolore magna 
+									aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+								</p>
+								<span class="testimonial__name italic-text">Div Sailor</span>
+							</div>
+						</div>
+					</div>
+					
+					<!-- navigation -->
+					<a class="testimonial__nav testimonial__nav_focused carousel-control left" href="#myCarousel-2" data-slide="prev"><i class="testimonial__nav_icon ion-chevron-left"></i></a>
+                    <a class="testimonial__nav testimonial__nav_focused carousel-control right" href="#myCarousel-2" data-slide="next"><i class="testimonial__nav_icon ion-chevron-right"></i></a>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-- CLIENTS -->
+	<section class="clients">
+	    <div class="container">
+		 
+		    <!-- topic -->
+			<div class="row">
+			    <span class="italic-text">Happy Clients</span>
+				<h3 class="caption">What people say</h3>
+				<div class="line"></div>
+				<p class="sentence">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+				</p>
+			</div>
+			
+			<!-- recommendations -->
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+				    <div class="client">
+					    <img class="client__image img-circle" src="image/human-1.jpg" alt="human" width="110" height="110">
+						<div class="client__content">
+							<span class="client__name paragraph">Matthew Dix</span><br>
+							<span class="client__profession">Graphic Design</span>
+							<div class="client__line line"></div>
+							<p class="client__description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quaerat fuga culpa 
+								qui magnam. Veritatis, eaque accusantium voluptas maiores architecto voluptatibus 
+								laudantium.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6">
+					<div class="client">
+					    <img  class="client__image img-circle" src="image/human-2.jpg" alt="human" width="110" height="110">
+						<div class="client__content">
+							<span class="client__name paragraph">Jaelynn Castillo</span><br>
+							<span class="client__profession">Graphic Design</span>
+							<div class="client__line line"></div>
+							<p class="client__description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quaerat fuga culpa 
+								qui magnam. Veritatis, eaque accusantium voluptas maiores architecto voluptatibus 
+								laudantium.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<div class="client">
+					    <img class="client__image img-circle" src="image/human-3.jpg" alt="human" width="110" height="110">
+						<div class="client__content">
+							<span class="client__name paragraph">Nick Karvounis</span><br>
+							<span class="client__profession">Graphic Design</span>
+							<div class="client__line line"></div>
+							<p class="client__description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quaerat fuga culpa 
+								qui magnam. Veritatis, eaque accusantium voluptas maiores architecto voluptatibus 
+								laudantium.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6">
+					<div class="client">
+					    <img class="client__image img-circle" src="image/human-4.jpg" alt="human" width="110" height="110">
+						<div class="client__content">
+							<span class="client__name paragraph">Mike Petrucci</span><br>
+							<span class="client__profession">Graphic Design</span>
+							<div class="client__line line"></div>
+							<p class="client__description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quaerat fuga culpa 
+								qui magnam. Veritatis, eaque accusantium voluptas maiores architecto voluptatibus 
+								laudantium.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	
+<!-- BLOG -->
+	<section class="blog" id="blog">
+	    <div class="container">
+		    
+			<!-- topic -->
+			<div class="row">
+			    <span class="italic-text">Our stories</span>
+				<h3 class="caption">Latest Blog</h3>
+				<div class="line"></div>
+				<p class="sentence">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+				</p>
+			</div>
+			
+			<!-- our articles -->
+			<div class="row">
+			    <div class="col-lg-4 col-md-4 col-sm-4  col-xs-6">
+					<article class="article">
+						<div class="article_position">
+						    <img src="image/blog-1.jpg" alt="blog" class="article__image" width="380" height="240">
+							<a class="date date_focused" href="#">
+							    <span class="date__day">15</span><br>
+								<span class="date__month">Jan</span>
+							</a>
+						</div>
+						<a class="article__link" href="#">
+							<span class="article__title  article__title_focused paragraph">Lorem ipsum dolor sit amet</span>
+						</a>
+						<p class="article__description">
+							Consectetur adipiscing elit, sed do eiusmod tempor 
+							incididunt ut labore et dolore magna aliqua.
+						</p>
+						<div class="long-line article__long-line"></div>
+						<div class="subsection">
+							<i class="subsection__icon ion-eye"></i>
+							<span class="subsection__look subsection__number">542</span>
+							<i class="subsection__icon ion-chatbubble-working"></i>
+							<span class="subsection__comment subsection__number">17</span>
+						</div>
+					</article>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4  col-xs-6">
+					<article class="article">
+						<div class="article_position">
+						    <img src="image/blog-2.jpg" alt="blog" class="article__image" width="380" height="240">
+							<a class="date date_focused" href="#">
+							    <span class="date__day">14</span><br>
+								<span class="date__month">Jan</span>
+							</a>
+						</div>
+						<a class="article__link" href="#">
+							<span class="article__title  article__title_focused paragraph">Lorem ipsum dolor sit amet</span>
+						</a>
+						<p class="article__description">
+							Consectetur adipiscing elit, sed do eiusmod tempor 
+							incididunt ut labore et dolore magna aliqua.
+						</p>
+						<div class="long-line article__long-line"></div>
+						<div class="subsection">
+							<i class="subsection__icon ion-eye"></i>
+							<span class="subsection__look subsection__number">992</span>
+							<i class="subsection__icon ion-chatbubble-working"></i>
+							<span class="subsection__comment subsection__number">42</span>
+						</div>
+					</article>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+					<article class="article">
+						<div class="article_position">
+						    <img src="image/blog-3.jpg" alt="blog" class="article__image" width="380" height="240">
+							<a class="date date_focused" href="#">
+							    <span class="date__day">12</span><br>
+								<span class="date__month">Jan</span>
+							</a>
+						</div>
+						<a class="article__link" href="#">
+							<span class="article__title  article__title_focused paragraph">Lorem ipsum dolor sit amet</span>
+						</a>
+						<p class="article__description">
+							Consectetur adipiscing elit, sed do eiusmod tempor 
+							incididunt ut labore et dolore magna aliqua.
+						</p>
+						<div class="long-line article__long-line"></div>
+						<div class="subsection">
+							<i class="subsection__icon ion-eye"></i>
+							<span class="subsection__look subsection__number">1560</span>
+							<i class="subsection__icon ion-chatbubble-working"></i>
+							<span class="subsection__comment subsection__number">98</span>
+						</div>
+					</article>
+				</div>
+			</div>
+			
+	    </div>
+	</section>
+
+<!-- MAP -->
+	<section class="map">
+	    <div class="container">
+	        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5361.52468717686!2d35.2271281333916!3d47.78605618355676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc5ebc1dc77809%3A0x85f9af9a2cf35c72!2z0JrQvtGB0LzRltGH0L3QsCDQstGD0LvQuNGG0Y8sIDEyNCwg0JfQsNC_0L7RgNGW0LbQttGPLCDQl9Cw0L_QvtGA0ZbQt9GM0LrQsCDQvtCx0LvQsNGB0YLRjA!5e0!3m2!1sru!2sua!4v1486401228399" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+	    </div>
+	</section>
+
+<!-- FOOTER -->
+	<footer class="footer" id="contact">
+		<div class="container">
+		    <div class="row">
+			 
+			    <!-- column 1 -->
+			    <div class="col-md-5 col-sm-5 col-xs-12">
+				    <span class="footer__title footer__title_big">MoGo</span>
+					<div class="mogo">
+						<p class="mogo__description">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+							laboris nisi ut aliquip ex ea commodo consequat. 
+						</p>
+						<span class="mogo__number"><b>15k</b> followers</span>
+						<div class="long-line"></div>
+						<span class="mogo__follow">Follow Us:</span>
+						<a href="https://www.facebook.com" class="mogo__link mogo__link_focused"><i class="mogo__icon ion-social-facebook"></i></a>
+						<a href="https://twitter.com" class="mogo__link mogo__link_focused"><i class="mogo__icon ion-social-twitter"></i></a>
+						<a href="https://www.instagram.com" class="mogo__link mogo__link_focused"><i class="mogo__icon ion-social-instagram-outline"></i></a>
+						<a href="https://www.pinterest.com" class="mogo__link mogo__link_focused"><i class="mogo__icon ion-social-pinterest-outline"></i></a>
+						<a href="https://plus.google.com" class="mogo__link mogo__link_focused"><i class="mogo__icon ion-social-googleplus"></i></a>
+						<a href="https://www.youtube.com" class="mogo__link mogo__link_focused"><i class="mogo__icon ion-social-youtube"></i></a>
+						<a href="https://dribbble.com" class="mogo__link mogo__link_focused"><i class="mogo__icon ion-social-dribbble-outline"></i></a>
+						<a href="https://www.tumblr.com" class="mogo__link mogo__link_focused"><i class="mogo__icon ion-social-tumblr"></i></a>
+						<form class="form" action="#" method="post">
+							<input class="form__input form__input_focused" type="email" placeholder="Your Email" required>
+							<button class="form__button form__button_focused">subscribe</button>
+						</form>
+					</div>
+				</div>
+				
+				<!-- column 2 -->
+				<div class="col-md-4 col-sm-4 col-xs-6">
+				    <span class="paragraph footer__title">Blogs</span>
+					<div class="clause">
+					    <img class="clause__image" src="image/clause-1.jpg" alt="clause" width="120" height="80">
+						<a class="clause__link" href="#">
+						    <p class="clause__sentence clause__sentence_focused">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+						    <span class="clause__date">Jan 9, 2016</span>
+						</a>
+					</div>
+					<div class="clause">
+					    <img class="clause__image" src="image/clause-2.jpg" alt="clause" width="120" height="80">
+						<a class="clause__link" href="#">
+						    <p class="clause__sentence clause__sentence_focused">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+						    <span class="clause__date">Jan 9, 2016</span>
+						</a>
+					</div>
+					<div class="clause">
+					    <img class="clause__image" src="image/clause-3.jpg" alt="clause" width="120" height="80">
+						<a class="clause__link" href="#">
+						    <p class="clause__sentence clause__sentence_focused">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+						    <span class="clause__date">Jan 9, 2016</span>
+						</a>
+					</div>
+				</div>
+				
+				<!-- column 3 -->
+				<div class="col-md-3 col-sm-3 col-xs-6">
+				    <div class="instagram">
+						<span class="paragraph footer__title">Instagram</span>
+						<a href="https://www.instagram.com">
+							<img class="instagram__image" src="image/instagram.jpg" alt="instagram">
+							<span class="instagram__link instagram__link_focused">View more photos</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			
+			<!-- copyright -->
+			<div class="long-line footer__long-line"></div>
+			<p class="footer__copyright">© 2016 MoGo free PSD template by <span class="footer__colored-text">Laaqiq</span></p>
 		</div>
 	</footer>
 
 	<script src="js/main.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+
+
+
 
 
 	

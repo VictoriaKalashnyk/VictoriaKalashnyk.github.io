@@ -1,7 +1,7 @@
 'use strict';
 
 /* ----- SLIDER ----- */
-var slideIndex = 1;
+/* var slideIndex = 1;
 showSlides(slideIndex); 
 
 function currentSlide(n) {
@@ -11,7 +11,7 @@ function currentSlide(n) {
 function showSlides(n) {
 	var i;
 	var slides = document.getElementsByClassName("title__slide");
-	var dots = document.getElementsByClassName("slide");
+	var dots = document.getElementsByClassName("dot");
 	
 	if (n > slides.length) {
 		slideIndex = 1
@@ -26,12 +26,26 @@ function showSlides(n) {
 		dots[i].className = dots[i].className.replace("active", "");
 	}
 	slides[slideIndex - 1].style.display = "block";
-	dots[slideIndex - 1].className += " active";
-}
+	dots[slideIndex - 1].className += " active"; */
+	
+	/* setInterval(function() { 
+		currentSlide(n);
+	}, 5000);  */
+
+	
+/* } */
+
+
+
+
+
+
+
+
 
 
 $(function (){
-	
+    
 	/* ----- ACCORDION ----- */
 	$('.panel').click(function (){
 	    $(this).toggleClass('active');
@@ -57,29 +71,38 @@ $(function (){
 			}
 		};
 		
-		$('.facts .projects').animate({ number: 42 }, 'slow');
-		$('.facts .client').delay(500).animate({ number: 123 }, 'slow');
-		$('.facts .winner').delay(1000).animate({ number: 15 }, 'slow');
-		$('.facts .cup').delay(1500).animate({ number: 99 }, 'slow');
-		$('.facts .members').delay(2000).animate({ number: 24 }, 'slow');
+		$('#projects').animate({ number: 42 }, 'slow');
+		$('#client').delay(500).animate({ number: 123 }, 'slow');
+		$('#winner').delay(1000).animate({ number: 15 }, 'slow');
+		$('#cup').delay(1500).animate({ number: 99 }, 'slow');
+		$('#members').delay(2000).animate({ number: 24 }, 'slow');
 	   $(window).unbind('scroll.once')
 	};
 	
-	
 	/* ----- SLIDER ----- */
     $(".carousel").carousel({
-        interval: 3000
+        interval: 5000
     })
+	
+	/* ----- A FIXED CAP ----- */
+	$(".header").removeClass("default");
+	$(window).scroll(function(){
+	    if ($(this).scrollTop() > 900) {
+			$(".header").addClass("default").fadeIn('fast');
+		} else {
+			$(".header").removeClass("default").fadeIn('fast');
+		};
+	});
+	
+	/* ----- SMOOTH SCROLLING ----- */
+	var $page = $('html, body');
+	$('.header a[href*="#"], .banner a[href*="#"]').click(function() {
+	    $page.animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+		}, 800);
+		return false;
+	});
 
-
-	
-
-	
-
-	
-	
-	
-	
 });
 
 
