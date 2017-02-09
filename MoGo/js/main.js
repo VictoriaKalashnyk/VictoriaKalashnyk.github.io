@@ -1,55 +1,32 @@
 'use strict';
 
-/* ----- SLIDER ----- */
-/* var slideIndex = 1;
-showSlides(slideIndex); 
-
-function currentSlide(n) {
-	showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-	var i;
-	var slides = document.getElementsByClassName("title__slide");
-	var dots = document.getElementsByClassName("dot");
-	
-	if (n > slides.length) {
-		slideIndex = 1
-	}
-	if (n < 1) {
-		slideIndex = slides.length
-	}
-	for (i = 0; i < slides.length; i++) {
-		slides[i].style.display = "none";
-	}
-	for(i = 0; i < dots.length; i++) {
-		dots[i].className = dots[i].className.replace("active", "");
-	}
-	slides[slideIndex - 1].style.display = "block";
-	dots[slideIndex - 1].className += " active"; */
-	
-	/* setInterval(function() { 
-		currentSlide(n);
-	}, 5000);  */
-
-	
-/* } */
-
-
-
-
-
-
-
-
-
-
 $(function (){
     
 	/* ----- ACCORDION ----- */
-	$('.panel').click(function (){
-	    $(this).toggleClass('active');
+	$(".panel").on("click", function() {
+		if ($(this).hasClass('active')) {
+		    $(this).removeClass("active");
+		    $(".panel i.accordion__pointer").removeClass("ion-chevron-up").addClass("ion-chevron-down");
+		} else {
+		    $(".panel i.accordion__pointer").removeClass("ion-chevron-up").addClass("ion-chevron-down");
+		    $(this).find("i.accordion__pointer").removeClass("ion-chevron-down").addClass("ion-chevron-up");
+		    $(".panel").removeClass("active");
+		    $(this).addClass("active");
+		}
 	});
+	$("i.accordion__pointer").bind('click',function(){return false;});
+	$(".panel-body").bind('click',function(){return false;});
+    
+	// Custom Scrolling 
+	$(".customScrollbar").mCustomScrollbar({
+	    axis:"xy",
+	    setHeight: 180,
+	        scrollButtons:{
+	            enable: true,
+	            scrollAmount: 12
+	        }, 
+	});
+
 	
 	/* ----- TIMER ----- */
 	$(window).bind('scroll.once', function(){ 
@@ -57,7 +34,6 @@ $(function (){
 	});
 	
 	function timer() {
-		
 	    $.Tween.propHooks.number = {
 			get: function ( tween ){
 				var num = tween.elem.innerHTML.replace(/^[^\d-]+/, '');
@@ -77,22 +53,20 @@ $(function (){
 		$('#cup').delay(1500).animate({ number: 99 }, 'slow');
 		$('#members').delay(2000).animate({ number: 24 }, 'slow');
 	   $(window).unbind('scroll.once')
+	
 	};
 	
-	/* ----- SLIDER ----- */
-    $(".carousel").carousel({
-        interval: 5000
-    })
 	
 	/* ----- A FIXED CAP ----- */
-	$(".header").removeClass("default");
+/* 	$(".header").removeClass("default");
 	$(window).scroll(function(){
-	    if ($(this).scrollTop() > 900) {
+	    if ($(this).scrollTop() > 800) {
 			$(".header").addClass("default").fadeIn('fast');
 		} else {
 			$(".header").removeClass("default").fadeIn('fast');
 		};
-	});
+	}); */
+	
 	
 	/* ----- SMOOTH SCROLLING ----- */
 	var $page = $('html, body');
@@ -102,6 +76,40 @@ $(function (){
 		}, 800);
 		return false;
 	});
+	
+	
+	/* ----- GOOGLE MAPS ----- */
+	google.maps.event.addDomListener(window, 'load', initialize);
+	function initialize() {
+		var mapOptions = {
+			zoom: 12,
+			center: new google.maps.LatLng(47.839040, 35.101729),
+			scrollwheel: false
+		};
+
+		var mapElement = document.getElementById('map');
+		var map = new google.maps.Map(mapElement, mapOptions);
+
+		var marker = new google.maps.Marker({
+		    position: new google.maps.LatLng(47.839040, 35.101729),
+		    map: map,
+			icon: 'image/map.png',
+		    title: 'Find us here!'
+		});
+	}
+	
+	// Open map
+	$(".map__text").on("click", function() {
+		$(".map__text").css("display", "none");
+		$(".map__content").css("z-index", "50");
+	});
+	
+	
+	/* ----- SEARCH ----- */
+	$(".menu__icon").on("click", function() {
+		$(this).toggleClass('active');
+	});
+	
 
 });
 

@@ -6,17 +6,18 @@
 	<meta charset="utf-8">
 	<meta name="keywords" content="molestiae, maxime, labore, dolorem, quod">
 	<meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste nostrum blanditiis cupiditate laborum fuga quisquam quas praesentium veritatis architecto. Cumque!">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Victoria Kalashnyk">
-	
+		
 	<link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/ionicons.min.css">
 	<link rel="stylesheet/less" href="less/style.less">
 	<link rel="stylesheet" href="css/style.css">  
-	
-	<script src="js/jquery-3.1.1.min.js"></script>
-	
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css"> 
+
+		
 </head>
 <body>	
 	
@@ -39,10 +40,15 @@
 							<li class="menu__item"><a class="menu__link menu__link_focused" href="#about">about</a></li>
 							<li class="menu__item"><a class="menu__link menu__link_focused" href="#service">service</a></li>
 							<li class="menu__item"><a class="menu__link menu__link_focused" href="#work">work</a></li>
-							<li class="menu__item"><a class="menu__link menu__link_focused" href="#">blog</a></li>
+							<li class="menu__item"><a class="menu__link menu__link_focused" href="#blog">blog</a></li>
 							<li class="menu__item"><a class="menu__link menu__link_focused" href="#contact">contact</a></li>
-							<li class="menu__item"><a class="menu__link menu__link_focused" href="#"><i class="ion-ios-cart-outline"></i></a></li>
-							<li class="menu__item"><a class="menu__link menu__link_focused" href="#"><i class="ion-android-search"></i></a></li>
+							<li class="menu__item"><a class="menu__link menu__link_focused" href=""><i class="ion-ios-cart-outline"></i></a></li>
+							<li class="menu__item">
+							    <i class="menu__icon menu__icon_focused ion-android-search"></i>
+							    <form class="mode">
+								    <input type="search" class="mode__search mode__search_focused" placeholder="Search">
+								</form>
+							</li>
 						</ul>
 					</nav>
 					
@@ -309,6 +315,7 @@
 					<div class="accordion panel-group" id="accordion" role="tablist" aria-mulitsectable="true">
 						<!-- panel 1 -->
 						<div class="panel panel-default active">
+						    <i class="accordion__pointer ion-chevron-up"></i>
 						    <div class="panel-heading" role="tab" id="heading1">
 							    <h4 class="panel-title paragraph">
 								    <a class="accordion__link accordion__link_focused" href="#collapse1" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapse1">
@@ -319,15 +326,38 @@
 							</div>
 							<div id="collapse1" class="panel-collapse collapse in" role="tabpanel" aria-labellebdy="heading1">
 							    <div class="panel-body">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-									Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-									dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								    <div class="accordion__scroll customScrollbar">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+											Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+											dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+											proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+										</p>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing 
+											elit. Doloribus, ullam, doloremque autem nesciunt ut cumque aspernatur nostrum accusantium tempore ipsum expedita quisquam 
+											non commodi. Nobis, reiciendis, a rerum consequuntur possimus ut sed fugiat quos molestias tempore dolor cum molestiae saepe 
+											laborum nostrum esse natus architecto sequi inventore vel dolore quaerat.
+										</p>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing 
+											elit. Doloribus, ullam, doloremque autem nesciunt ut cumque aspernatur nostrum accusantium tempore ipsum expedita quisquam 
+											non commodi. Nobis, reiciendis, a rerum consequuntur possimus ut sed fugiat quos molestias tempore dolor cum molestiae saepe 
+											laborum nostrum esse natus architecto sequi inventore vel dolore quaerat.
+										</p>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing 
+											elit. Doloribus, ullam, doloremque autem nesciunt ut cumque aspernatur nostrum accusantium tempore ipsum expedita quisquam 
+											non commodi. Nobis, reiciendis, a rerum consequuntur possimus ut sed fugiat quos molestias tempore dolor cum molestiae saepe 
+											laborum nostrum esse natus architecto sequi inventore vel dolore quaerat.
+										</p>
+								    </div>
 								</div>
 							</div>
 						</div>
 						<!-- panel 2 -->
 						<div class="panel panel-default">
+						    <i class="accordion__pointer ion-chevron-down"></i>
 						    <div class="panel-heading" role="tab" id="heading2">
 							    <h4 class="panel-title paragraph">
 								    <a class="accordion__link accordion__link_focused" href="#collapse2" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapse2">
@@ -338,14 +368,19 @@
 							</div>
 							<div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labellebdy="heading2">
 							    <div class="panel-body">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-									Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-									dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+								    <div class="accordion__scroll  customScrollbar">
+									    <p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+											Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+											dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+										</p>
+								    </div>
 								</div>
 							</div>
 						</div>
 						<!-- panel 3 -->
 						<div class="panel panel-default">
+						    <i class="accordion__pointer ion-chevron-down"></i>
 						    <div class="panel-heading" role="tab" id="heading3">
 							    <h4 class="panel-title paragraph">
 								    <a class="accordion__link accordion__link_focused" href="#collapse3" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapse3">
@@ -356,14 +391,20 @@
 							</div>
 							<div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labellebdy="heading3">
 							    <div class="panel-body">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-									Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-									dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-									proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-									sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-									Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-									dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								    <div class="accordion__scroll customScrollbar">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+											Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+											dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+											proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+											sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+										</p>
+										<p>
+											Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+											dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+											proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -456,7 +497,7 @@
 			
 		    <!-- photo of our team -->
 			<div class="row">
-				<div class="col-md-4 col-sm-6 col-xs-12" style="padding:0;">
+				<div class="col-md-4 col-sm-6 col-xs-12">
 					<div class="person person_focused">
 						<img class="person__image" src="image/person-1.jpg" alt="person-1" width="380" height="470">
 						<div class="person__icons">
@@ -471,7 +512,7 @@
 						<span class="info__profession">Graphic Design</span>
 					</p>
 				</div>
-				<div class="col-md-4 col-sm-6 col-xs-12" style="padding:0;">
+				<div class="col-md-4 col-sm-6 col-xs-12">
 					<div class="person person_focused">
 						<img class="person__image" src="image/person-2.jpg" alt="person-2" width="380" height="470">
 						<div class="person__icons">
@@ -486,7 +527,7 @@
 						<span class="info__profession">Branding/UX design</span>
 					</p>
 				</div>
-				<div class="col-md-4 col-sm-6 col-xs-12" style="padding:0;">
+				<div class="col-md-4 col-sm-6 col-xs-12">
 				    <div class="person person_focused">
 						<img class="person__image" src="image/person-3.jpg" alt="person-3" width="380" height="470">
 						<div class="person__icons">
@@ -883,7 +924,12 @@
 <!-- MAP -->
 	<section class="map">
 	    <div class="container">
-	        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5361.52468717686!2d35.2271281333916!3d47.78605618355676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc5ebc1dc77809%3A0x85f9af9a2cf35c72!2z0JrQvtGB0LzRltGH0L3QsCDQstGD0LvQuNGG0Y8sIDEyNCwg0JfQsNC_0L7RgNGW0LbQttGPLCDQl9Cw0L_QvtGA0ZbQt9GM0LrQsCDQvtCx0LvQsNGB0YLRjA!5e0!3m2!1sru!2sua!4v1486401228399" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+	        <div id="map" class="map__content"></div>
+			<div class="map__text">
+				<img class="map__image" src="image/map.png" alt="marker" width="20" height="26">
+				<span class="map__title">Open Map</span>
+				<div class="line"></div>
+			</div> 
 	    </div>
 	</section>
 
@@ -960,16 +1006,17 @@
 			<!-- copyright -->
 			<div class="long-line footer__long-line"></div>
 			<p class="footer__copyright">© 2016 MoGo free PSD template by <span class="footer__colored-text">Laaqiq</span></p>
+		
 		</div>
 	</footer>
 
+	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="js/jquery.mousewheel.js"></script>
 
 
-
-
-
-	
 </body>
 </html>
