@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Photography App</title>
+	
+	<meta charset="utf-8">
+	<meta name="keywords" content="molestiae, maxime, labore, dolorem, quod">
+	<meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste nostrum blanditiis cupiditate laborum fuga quisquam quas praesentium veritatis architecto. Cumque!">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Victoria Kalashnyk">
+		
+	<link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">  
+	
+</head>
+<body>	
+	
+<!-- HEADER -->
+	<header class="header" id="home">
+		<div class="container">
+						
+            <!-- website navigation -->
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container">
+					<!-- mobile nav -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						
+						<!-- logotype -->
+						<a href="#" class="navbar-brand">
+							<img class="navbar__logo" src="image/logo.png" alt="LOGO">
+						</a>
+					</div>
+					
+					<!-- desktop nav -->
+					<div class="collapse navbar-collapse navbar-right" id="main-menu">
+						<ul class="nav navbar-nav">
+							<li><a class="navbar__link" href="#home">Home</a></li>
+							<li><a class="navbar__link" href="#about">About</a></li>
+							<li><a class="navbar__link" href="#features">Features</a></li>
+							<li><a class="navbar__link" href="#contact">Contact</a></li>
+						</ul>
+					</div>	
+				</div>
+			</nav>
+			
+			<div class="row">
+			    <div class="col-md-6 col-sm-6 col-xs-12">
+			        <div class="title">
+						<h1 class="title__main">Hello.</h1>
+						<h2 class="title__full">We take mobile photography to a brand new level.</h2>
+						<p class="title__sentence">With our free app you can take amazing photos straight from your phone.</p>
+					</div>
+					<div class="button">
+						<a href="#" class="button__link button__link_big button__link_big_focused">Get the free app</a><br>
+						<a href="#" class="button__link button__link_small button__link_small_focused"><img src="image/app-store.png" alt="download on the apple store" class="button__image"></a>
+						<a href="#" class="button__link button__link_small button__link_small_focused"><img src="image/google-play.png" alt="get in on google play" class="button__image"></a>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6 hidden-xs">
+				    <div class="screen-photo pull-right">
+					    <div class="screen-photo__block">
+						    <img class="screen-photo__image img-responsive" src="image/iPhone-1.png" alt="iPhone">
+						</div>
+						<div class="screen-photo__block">
+						    <img class="screen-photo__image img-responsive" src="image/iPhone-2.png" alt="iPhone">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>	
+
+<!-- ABOUT US -->
+	<section class="about" id="about">
+	    <div class="container">
+		    <div class="row">
+			
+			    <!-- phone image -->
+			    <div class="col-md-4 col-sm-4 col-xs-12">
+					<div class="phone">
+						<img src="image/iPhone-3.png" alt="iPhone" class="img-responsive phone__image">
+					</div>
+				</div>
+				
+				<!-- slider -->
+				<div class="col-md-8 col-sm-8 col-xs-12">
+					<div class="slider carousel slide" id="myCarousel">
+					    
+						<!-- wrapper for slides -->
+						<div class="slider__content carousel-inner">
+							<div class="slider__item item active">
+								<div class="slider__text">
+								    <h3 class="slider__topic">About Us</h3>
+									<p class="slider__description">
+										Despreneur is a magazine about design, technology and entrepreneurship. 
+										Nowadays designers play major roles in successful startups and established 
+										companies. A Despreneur, coined by us, is  a new breed of human being – 
+										a designer with entrepreneurial mindset.
+									</p>
+								</div>
+							</div>
+							<div class="slider__item item">
+								<div class="slider__text">
+								    <h3 class="slider__topic">Happy Team</h3>
+									<p class="slider__description">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, perferendis, 
+										dignissimos, reiciendis, tenetur fugit saepe adipisci molestias similique quas 
+										fuga beatae quae sequi quos omnis sint eveniet facere architecto eos ratione 
+										totam.
+									</p>
+								</div>
+							</div>
+							<div class="slider__item item">
+								<div class="slider__text">
+								    <h3 class="slider__topic">What we do</h3>
+									<p class="slider__description">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, corporis, 
+										quia quaerat laudantium officiis sint modi labore repudiandae reiciendis minima 
+										enim laboriosam optio velit molestiae.
+									</p>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Indicators -->
+						<ol class="carousel-indicators slider__indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active slider__dot"></li>
+							<li data-target="#myCarousel" data-slide-to="1" class="slider__dot"></li>
+							<li data-target="#myCarousel" data-slide-to="2" class="slider__dot"></li>
+						</ol>
+						
+					</div>
+				</div>
+	
+			</div>
+		</div>
+		<hr class="line hidden-xs">
+	</section>
+	
+<!-- FEATURES MENU -->
+	<section class="features" id="features">
+	    <div class="container">
+		
+			<!-- button group -->
+		    <div class="row">
+			    <div class="btn-group">
+				    <button type="button" class="btn btn-default">Macro</button>
+				    <button type="button" class="btn btn-default">Filter</button>
+				    <button type="button" class="btn btn-default">Sharing</button>
+				</div>
+			</div>
+		</div>
+		<div class="features-bg">
+		    <div class="container">
+		        <div class="row">
+				    <div class="col-md-8">
+					    <div class="features__content">
+						   <h3 class="features__caption">Macro photography.</h3>
+						   <p class="features__sentence">No more expensive lenses and heavy editing in Photoshop.</p>
+						</div>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+<!-- CONTACT -->
+	<section class="contact" id="contact">
+	    <div class="container">
+		    <div class="row">
+			    <div class="col-md-6 col-sm-6 col-xs-12">
+				
+				    <!-- person -->
+				    <div class="person">
+					    <img src="image/person-1.jpg" alt="person" class="person__image img-circle pull-left">
+						<h5 class="person__name">Bryan Jones</h5>
+					    <p class="person__description">
+						    Wannabe travel fanatic. Food buff. Internet ninja. 
+							Unapologetic web practitioner. Tvaholic. 
+							Alcohol scholar.
+						</p>
+					</div>
+					<div class="person">
+					    <img src="image/person-2.jpg" alt="person" class="person__image img-circle pull-left">
+						<h5 class="person__name">Sarah Thompson</h5>
+					    <p class="person__description">
+						    Infuriatingly humble student. Bacon scholar. 
+							Freelance communicator. 
+							Social media enthusiast.
+						</p>
+					</div>
+					
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-12">
+				
+				    <!-- contact text -->
+				    <div class="contact__content">
+					    <h4 class="contact__title">Contact Us</h4>
+						<p class="contact__description">
+							Here on the left you can see our team which makes things happen.
+						</p>
+						<p class="contact__description">
+							If you have any questions, suggestions or want to contribute, 
+							please contact Despreneur at hi[at]despreneur.com. We’ll get 
+							back to you as soon as possible.
+						</p>
+					</div>	
+					
+				</div>
+			</div>
+		</div>
+	</section> 
+	
+<!-- FOOTER -->
+	<footer class="footer">
+	    <hr class="line">
+		<div class="container">
+		    <div class="row">
+				<div class="footer__content_left">
+				    <span class="footer__info">&copy; 2013 Photography App</span>
+					<ul class="footer__list">
+						<li class="footer__item"><a class="footer__link" href="index.html">Home</a></li>
+						<li class="footer__item"><a class="footer__link" href="">Press</a></li>
+						<li class="footer__item"><a class="footer__link" href="">FAQ</a></li>
+						<li class="footer__item"><a class="footer__link" href="">Blog</a></li>
+						<li class="footer__item"><a class="footer__link" href="">Terms</a></li>
+						<li class="footer__item"><a class="footer__link" href="">Privacy</a></li>
+					</ul>
+				</div>
+				<div class="footer__content_right">
+				    <ul class="footer__list">
+				    	<li class="footer__item"><a class="footer__link" href="https://www.instagram.com">Instagram</a></li>
+				    	<li class="footer__item"><a class="footer__link" href="https://twitter.com">Twitter</a></li>
+				    	<li class="footer__item"><a class="footer__link" href="https://www.facebook.com">Facebook</a></li>
+				    </ul>
+				</div>
+			</div>		
+		</div>
+	</footer>
+	
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	
+	<script>
+		$(function (){
+		
+		    // Slider
+			$('.carousel').carousel()
+			
+			// Smooth scrolling
+			var $page = $('html, body');
+		    $('a[href*="#"]').click(function() {
+		        $page.animate({
+                    scrollTop: $($.attr(this, 'href')).offset().top
+				}, 800);
+				return false;
+			});
+						
+		});
+	</script>
+
+</body>
+</html>

@@ -1,7 +1,13 @@
 'use strict';
 
 $(function (){
-    
+	
+	/* ----- SEARCH ----- */
+	$(".menu__icon").on("click", function() {
+		$(this).toggleClass('active');
+	});
+	
+	
 	/* ----- ACCORDION ----- */
 	$(".panel").on("click", function() {
 		if ($(this).hasClass('active')) {
@@ -79,7 +85,7 @@ $(function (){
 	
 	
 	/* ----- GOOGLE MAPS ----- */
-	google.maps.event.addDomListener(window, 'load', initialize);
+    google.maps.event.addDomListener(window, 'load', initialize);
 	function initialize() {
 		var mapOptions = {
 			zoom: 12,
@@ -98,18 +104,13 @@ $(function (){
 		});
 	}
 	
-	// Open map
-	$(".map__text").on("click", function() {
-		$(".map__text").css("display", "none");
-		$(".map__content").css("z-index", "50");
-	});
+	$("#map").css("height",$("#map").parent().parent().height() + "px");
 	
-	
-	/* ----- SEARCH ----- */
-	$(".menu__icon").on("click", function() {
-		$(this).toggleClass('active');
-	});
-	
+	/* $('#myModal').on('shown.bs.modal', function () {
+        initialize();
+    }); */
+
+	  
 
 });
 
