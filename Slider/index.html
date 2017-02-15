@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Slider</title>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Victoria Kalashnyk">
+		
+	<link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico">
+	<link rel="stylesheet" href="css/style.css">  
+	<link rel="stylesheet" href="css/normalize.css">  
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+	
+</head>
+<body>	
+
+	<header class="header">
+		<div class="container">
+			<div class="logo">
+				<span class="logo__word">Sli<span class="logo__letter">d</span>er</span>
+			</div>
+			<div class="task">
+			    <a href="#" class="task__link">technical task</a>
+				<p class="task__content">
+					Создать пустую страницу, а на ней слайдер. Ниже настройки слайдера 
+					(менять вид слайдера, менять скорость смены слайдера, выбор эффекта 
+					для смена слайдера, выбор управляющих элементов для слайдера
+					(стрлочки, кружочки)…
+				</p>
+			</div>
+		</div>
+	</header>
+	
+	
+	<div class="carousel">
+		<div class="container">
+			<div class="slider"> 
+				<ul class="slider__content"> 
+					<li class="slider__block showing"><img class="slider__image" src="image/mountains-1.jpg" alt="Mountains"></li>
+					<li class="slider__block"><img class="slider__image" src="image/mountains-2.jpg" alt="Mountains"></li>
+					<li class="slider__block"><img class="slider__image" src="image/mountains-3.jpg" alt="Mountains"></li>
+					<li class="slider__block"><img class="slider__image" src="image/mountains-4.jpg" alt="Mountains"></li>
+					<li class="slider__block"><img class="slider__image" src="image/mountains-5.jpg" alt="Mountains"></li>
+				</ul>
+						
+				<a class="slider__nav slider__nav_prew" href="#" onclick="prevSlide()">&lsaquo;</a>
+				<a class="slider__nav slider__nav_next" href="#" onclick="nextSlide()">&rsaquo;</a>
+						
+				<ul class="dot">
+					<li class="dot__item"><a class="dot__link active" href="#" onclick="dotSlide(0)">&nbsp;</a></li>
+					<li class="dot__item"><a class="dot__link" href="#" onclick="dotSlide(1)">&nbsp;</a></li>
+					<li class="dot__item"><a class="dot__link" href="#" onclick="dotSlide(2)">&nbsp;</a></li>
+					<li class="dot__item"><a class="dot__link" href="#" onclick="dotSlide(3)">&nbsp;</a></li>
+					<li class="dot__item"><a class="dot__link" href="#" onclick="dotSlide(4)">&nbsp;</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div class="settings">
+		<div class="container">
+		    
+			<!-- appearance -->
+		    <div class="block">
+			    <h3 class="title">Внешний вид слайдера</h3>
+				<div title="theme_border" class="appearance">
+					<span>Pамкa:</span><br>
+					<img class="appearance__image" src="image/appearance-1.jpg" alt="appearance-1" width="150" height="85">
+				</div> 
+				<div title="theme_polaroid" class="appearance">
+					<span>Полароид:</span><br>
+					<img class="appearance__image" src="image/appearance-2.jpg" alt="appearance-2" width="150" height="85">
+				</div> 
+				<div title="theme_line" class="appearance">
+					<span>Заголовок:</span><br>
+					<img class="appearance__image" src="image/appearance-3.jpg" alt="appearance-3" width="150" height="85">
+				</div> 
+			</div>
+			
+			<!-- speed -->
+			<div class="block">
+			    <h3 class="title">Cкорость смены слайдера</h3>
+				<p class="time">
+					<label for="time">На данный момент: <span id="result">5000 </span> ms</label><br>
+					<input id="time" class="time__input" type="range" min="1000" max="20000" step="1000" value="5000" oninput="timeSlide()">
+				</p>
+			</div>
+			
+			<div class="block">
+			    <h3 class="title">Внешний вид элементов навигации</h3>
+				
+				
+			</div> 
+		</div>
+	</div>
+	
+
+
+
+	
+	
+	
+	
+	
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/main.js"></script>
+
+	
+	
+
+</body>
+</html>
