@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<title>Slider</title>
 	
@@ -7,107 +7,219 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Victoria Kalashnyk">
 		
-	<link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico">
-	<link rel="stylesheet" href="css/style.css">  
-	<link rel="stylesheet" href="css/normalize.css">  
+	<link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico"> 
+	<link rel="stylesheet" href="css/bootstrap.css"> 	
+	<link rel="stylesheet" href="css/style.css"> 
+	
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&amp;subset=cyrillic" rel="stylesheet">
 	
 </head>
 <body>	
 
+<!-- HEADER -->
 	<header class="header">
 		<div class="container">
-			<div class="logo">
-				<span class="logo__word">Sli<span class="logo__letter">d</span>er</span>
-			</div>
-			<div class="task">
-			    <a href="#" class="task__link">technical task</a>
-				<p class="task__content">
-					Создать пустую страницу, а на ней слайдер. Ниже настройки слайдера 
-					(менять вид слайдера, менять скорость смены слайдера, выбор эффекта 
-					для смена слайдера, выбор управляющих элементов для слайдера
-					(стрлочки, кружочки)…
-				</p>
+		    <div class="row">
+			    <!-- logotype -->
+				<div class="logo">
+					<span class="logo__word">Sli<span class="logo__letter">d</span>er</span>
+				</div>
+				
+				<!-- task -->
+				<div class="task">
+					<a href="#" class="task__link">technical task</a>
+					<p class="task__content">
+						Создать пустую страницу, а на ней слайдер. Ниже настройки слайдера 
+						(менять вид слайдера, менять скорость смены слайдера, выбор эффекта 
+						для смена слайдера, выбор управляющих элементов для слайдера
+						(стрлочки, кружочки)…
+					</p>
+				</div>
+				
 			</div>
 		</div>
 	</header>
-	
-	
+
+<!-- SLIDER -->
 	<div class="carousel">
 		<div class="container">
-			<div class="slider"> 
-				<ul class="slider__content"> 
-					<li class="slider__block showing"><img class="slider__image" src="image/mountains-1.jpg" alt="Mountains"></li>
-					<li class="slider__block"><img class="slider__image" src="image/mountains-2.jpg" alt="Mountains"></li>
-					<li class="slider__block"><img class="slider__image" src="image/mountains-3.jpg" alt="Mountains"></li>
-					<li class="slider__block"><img class="slider__image" src="image/mountains-4.jpg" alt="Mountains"></li>
-					<li class="slider__block"><img class="slider__image" src="image/mountains-5.jpg" alt="Mountains"></li>
-				</ul>
+	        <div class="row">
+			    <div class="col-md-12">
+					<div class="slider">
+					
+					    <!-- slides -->
+						<ul class="slider__content"> 
+							<li class="slider__block showing"><img class="slider__image" src="image/mountains-1.jpg" alt="Mountains"></li>
+							<li class="slider__block"><img class="slider__image" src="image/mountains-2.jpg" alt="Mountains"></li>
+							<li class="slider__block"><img class="slider__image" src="image/mountains-3.jpg" alt="Mountains"></li>
+							<li class="slider__block"><img class="slider__image" src="image/mountains-4.jpg" alt="Mountains"></li>
+							<li class="slider__block"><img class="slider__image" src="image/mountains-5.jpg" alt="Mountains"></li>
+						</ul>
 						
-				<a class="slider__nav slider__nav_prew" href="#" onclick="prevSlide()">&lsaquo;</a>
-				<a class="slider__nav slider__nav_next" href="#" onclick="nextSlide()">&rsaquo;</a>
+                        <!-- arrow -->
+						<div class="arrow slider__nav_standert">
+							<a class="slider__nav prev" href="#" onclick="prevSlide()">&lsaquo;</a>
+							<a class="slider__nav next" href="#" onclick="nextSlide()">&rsaquo;</a>
+						</div>
 						
-				<ul class="dot">
-					<li class="dot__item"><a class="dot__link active" href="#" onclick="dotSlide(0)">&nbsp;</a></li>
-					<li class="dot__item"><a class="dot__link" href="#" onclick="dotSlide(1)">&nbsp;</a></li>
-					<li class="dot__item"><a class="dot__link" href="#" onclick="dotSlide(2)">&nbsp;</a></li>
-					<li class="dot__item"><a class="dot__link" href="#" onclick="dotSlide(3)">&nbsp;</a></li>
-					<li class="dot__item"><a class="dot__link" href="#" onclick="dotSlide(4)">&nbsp;</a></li>
-				</ul>
+                        <!-- dots -->						
+						<ul class="dot dot__theme_standart">
+							<li class="dot__item"><a class="dot__link active" href="#" onclick="dotSlide(0)">&nbsp;</a></li>
+							<li class="dot__item"><a class="dot__link" href="#" onclick="dotSlide(1)">&nbsp;</a></li>
+							<li class="dot__item"><a class="dot__link" href="#" onclick="dotSlide(2)">&nbsp;</a></li>
+							<li class="dot__item"><a class="dot__link" href="#" onclick="dotSlide(3)">&nbsp;</a></li>
+							<li class="dot__item"><a class="dot__link" href="#" onclick="dotSlide(4)">&nbsp;</a></li>
+						</ul>
+						
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-	
-	<div class="settings">
+
+<!-- SETTING -->
+	<div class="setting">
 		<div class="container">
-		    
-			<!-- appearance -->
-		    <div class="block">
-			    <h3 class="title">Внешний вид слайдера</h3>
-				<div title="theme_border" class="appearance">
-					<span>Pамкa:</span><br>
-					<img class="appearance__image" src="image/appearance-1.jpg" alt="appearance-1" width="150" height="85">
-				</div> 
-				<div title="theme_polaroid" class="appearance">
-					<span>Полароид:</span><br>
-					<img class="appearance__image" src="image/appearance-2.jpg" alt="appearance-2" width="150" height="85">
-				</div> 
-				<div title="theme_line" class="appearance">
-					<span>Заголовок:</span><br>
-					<img class="appearance__image" src="image/appearance-3.jpg" alt="appearance-3" width="150" height="85">
-				</div> 
-			</div>
+		    <div class="row">
 			
-			<!-- speed -->
-			<div class="block">
-			    <h3 class="title">Cкорость смены слайдера</h3>
-				<p class="time">
-					<label for="time">На данный момент: <span id="result">5000 </span> ms</label><br>
-					<input id="time" class="time__input" type="range" min="1000" max="20000" step="1000" value="5000" oninput="timeSlide()">
-				</p>
-			</div>
+				<!-- appearance -->
+			    <div class="col-md-6">
+					<h3 class="title">Внешний вид слайдера</h3>
+					<div class="row">
+                        <div class="col-md-4">
+							<div title="slider__theme_border" class="appearance setting__block">
+								<span>Pамкa:</span><br>
+								<img class="appearance__image" src="image/appearance-1.jpg" alt="appearance-1" width="150" height="85">
+							</div> 
+						</div>
+						<div class="col-md-4">
+							<div title="slider__theme_polaroid" class="appearance setting__block">
+								<span>Полароид:</span><br>
+								<img class="appearance__image" src="image/appearance-2.jpg" alt="appearance-2" width="150" height="85">
+							</div> 
+						</div>
+						<div class="col-md-4">
+							<div title="slider__theme_line" class="appearance setting__block">
+								<span>Заголовок:</span><br>
+								<img class="appearance__image" src="image/appearance-3.jpg" alt="appearance-3" width="150" height="85">
+							</div> 
+						</div>
+						<div class="col-md-4">
+							<div title="" class="appearance setting__block selected">
+								<span>Стандарт.</span><br>
+							</div> 
+						</div>
+					</div>
+				</div>
+				
+				<!-- speed -->
+				<div class="col-md-6">	
+					<h3 class="title">Cкорость смены слайдера</h3>
+					<p class="time">
+						<label for="time">На данный момент: <span id="result">5000 </span> ms</label><br>
+						<input id="time" class="time__input" type="range" min="1000" max="20000" step="1000" value="5000" onchange="timeSlide()">
+					</p>
+				</div>
+		    </div>
+			<div class="row">
 			
-			<div class="block">
-			    <h3 class="title">Внешний вид элементов навигации</h3>
+			    <!-- nav styles -->	
+			    <div class="col-md-6">
+					<h3 class="title">Внешний вид элементов навигации</h3>
+					<!-- dots -->
+					<div class="row">
+                        <div class="col-md-4">
+							<div title="dot__theme_rectangle" class="setting__dot setting__block">
+								<span>Прямоугольник:</span><br>
+								<img src="image/dot-1.jpg" alt="dot-1" width="150" height="25">
+							</div> 
+						</div>
+						<div class="col-md-4">					
+							<div title="dot__theme_shadow" class="setting__dot setting__block">
+								<span>Тень:</span><br>
+								<img src="image/dot-2.jpg" alt="dot-2" width="150" height="25">
+							</div> 
+						</div>
+						<div class="col-md-4">
+							<div title="dot__theme_cube" class="setting__dot setting__block">
+								<span>Куб:</span><br>
+								<img src="image/dot-3.jpg" alt="dot-3" width="150" height="25">
+							</div> 
+						</div>
+						<div class="col-md-4">
+							<div title="dot__theme_standart" class="setting__dot setting__block selected">
+								<span>Стандарт:</span><br>
+								<img src="image/dot-4.jpg" alt="dot-4" width="150" height="25">
+							</div> 
+						</div>
+					</div>
+					
+					<!-- arrows -->
+					<div class="row">
+                        <div class="col-md-4">
+							<div title="slider__nav_pointer" class="setting__arrow setting__block">
+								<span>Двойная стрелка:</span><br>
+								<img src="image/arrow-1.jpg" alt="arrow-1" width="140" height="50">
+							</div> 
+						</div>
+						<div class="col-md-4">					
+							<div title="slider__nav_round" class="setting__arrow setting__block">
+								<span>В круге:</span><br>
+								<img src="image/arrow-2.jpg" alt="arrow-2" width="140" height="50">
+							</div> 
+						</div>
+						<div class="col-md-4">
+							<div title="slider__nav_point" class="setting__arrow setting__block">
+								<span>Стрелка:</span><br>
+								<img src="image/arrow-3.jpg" alt="arrow-3" width="140" height="50">
+							</div> 
+						</div>
+						<div class="col-md-4">
+							<div title="slider__nav_standert" class="setting__arrow setting__block selected">
+								<span>Стандарт:</span><br>
+								<img src="image/arrow-4.jpg" alt="arrow-4" width="140" height="50">
+							</div> 
+						</div>
+					</div>
+				</div>
 				
-				
-			</div> 
+                <div class="col-md-6">	
+				    <h3 class="title">Эффекты:</h3>
+					<div class="row">
+                        <div class="col-md-4">
+							<div title="slider__action_opacity" class="setting__effect setting__block">
+								<span>Эффект-1:</span><br>
+								<img src="image/effect-1.jpg" alt="effect-1">
+							</div> 
+						</div>
+						<div class="col-md-4">
+							<div title="slider__action_motion" class="setting__effect setting__block">
+								<span>Эффект-2:</span><br>
+								<img src="image/effect-2.jpg" alt="effect-2">
+							</div> 
+						</div>
+						<div class="col-md-4">
+							<div title="slider__action_rotate" class="setting__effect setting__block">
+								<span>Эффект-3:</span><br>
+								<img src="image/effect-3.jpg" alt="effect-3">
+							</div> 
+						</div>
+						<div class="col-md-4">
+							<div title="" class="setting__effect setting__block selected">
+								<span>Без эффекта.</span><br>
+							</div> 
+						</div>
+					</div>
+                </div>				
+			</div>
 		</div>
 	</div>
 	
 
-
-
-	
-	
-	
-	
-	
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/main.js"></script>
 
-	
 	
 
 </body>
