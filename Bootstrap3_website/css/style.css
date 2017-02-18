@@ -50,7 +50,7 @@ a:active, a:focus, a:hover {
 li {list-style: none;}
 
 
-/* ----- 01 HEADER ----- */
+/* ----- HEADER ----- */
 .header {
 	color: #fff;
 	font-family: 'Aller', Arial, sans-serif;
@@ -171,6 +171,14 @@ li {list-style: none;}
 		    box-shadow: 0 1px 2px 0 rgba(0,0,0,.8);
 }
 
+@media screen and (max-width: 767px) {
+	.button__link_big  {
+		min-height: 45px;
+	    line-height: 45px;
+		font-size: 14px;
+	}
+}
+
 .button__link_big_focused:hover {
 	color: #fff;
 	background: #98e031;
@@ -208,6 +216,13 @@ li {list-style: none;}
 	}
 }
 
+@media screen and (max-width: 399px) {
+	.button__link_small {
+		margin-right: 5px;
+		padding: 0 1px;
+	}
+}
+
 /* screen-photo */
 .screen-photo {
 	float: right;
@@ -223,7 +238,7 @@ li {list-style: none;}
 .screen-photo__block:last-child {position: relative;}
 
 
-/* ----- 02 ABOUT US ----- */
+/* ----- ABOUT US ----- */
 .about {padding: 80px 0 60px;}
 
 .line {
@@ -269,7 +284,7 @@ li {list-style: none;}
 }
 
 
-/* ----- 03 FEATURES MENU ----- */
+/* ----- FEATURES MENU ----- */
 /* button group */
 .btn-group {
     display: table;
@@ -306,7 +321,7 @@ li {list-style: none;}
 }
 
 @media screen and (max-width: 399px) {
-	.btn-default {padding: 5px 15px;	}
+	.btn-default {padding: 5px 10px;	}
 }
 
 /* features */
@@ -318,6 +333,11 @@ li {list-style: none;}
 	        background-size: cover;
 	min-height: 500px;
 	margin: 70px 0;
+	font-size: 100%; /* 14px */
+}
+
+@media screen and (max-width: 767px) {
+	.features-bg   {font-size: 60%;}
 }
 
 .features__content {
@@ -326,21 +346,24 @@ li {list-style: none;}
 }
 
 .features__caption {
-	font-size: 52px;
+	font-size: 3.71em; /* 52px */
 	font-weight: bold;
 	margin: 50px 0 20px;
 }
 
 .features__sentence {
-	font-size: 37px;
+	font-size: 2.64em; /* 37px */
 	line-height: 40px;
-	font-weight: 100; /* ! */
 	text-shadow: rgba(0,0,0,.2) 0 1px 1px, rgba(0,0,0,.1) 0 0 5px;
 	filter: Shadow(Color=#d6d6d6, Direction=90, Strength=0); /* IE9 */
+	font-family: 'Aller light', sans-serif;
 }
 
+@media screen and (max-width: 767px) {
+	.features__sentence   {line-height: 30px;}
+}
 
-/* ----- 04 CONTACT ---- */
+/* ----- CONTACT ---- */
 .contact__title {
 	font: 36px/40px 'Aller', sans-serif;
 	font-weight: bold;
@@ -375,11 +398,8 @@ li {list-style: none;}
 .person:last-child {clear: left;}
 
 
-/* ----- 04 FOOTER ----- */
-.footer {
-	font: 16px/70px 'Aller light', 'Aller', Arial, sans-serif;
-}
-
+/* ----- FOOTER ----- */
+.footer {font: 16px/70px 'Aller light', 'Aller', Arial, sans-serif;}
 .footer__content_right {float: right;}
 .footer__content_left {float: left;}
 
@@ -418,5 +438,6 @@ li {list-style: none;}
 		float: none;
 		text-align: center;
 		line-height: 40px;
+		padding: 0;
 	}
 }
